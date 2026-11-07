@@ -1,5 +1,7 @@
 # freeze-check: which hosting networks work from Russia
 
+**Read the full write-up: [REPORT.md](REPORT.md)** — 435 test points, 211 networks, the packet-level mechanics.
+
 [Русский](README.ru.md)
 
 Since 2025 Russian TSPU equipment "freezes" TCP connections to part of the foreign hosting
