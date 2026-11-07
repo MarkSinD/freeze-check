@@ -1,0 +1,455 @@
+# EU control, VPS in Latvia; start 2026-11-05T12:54:22Z; one connection per point, 256 KB expected.
+# verdict: PASS = 256 KB arrived; FROZEN = stopped after 1 B..256 KB (includes slow links cut at 25 s); ZERO = nothing.
+verdict	bytes	asn	owner	brand	country	url	time
+ZERO	0	AS24940	Hetzner Online GmbH	Hetzner	Finland	https://hel1-speed.hetzner.com/100MB.bin	305ms
+PASS	262144	AS20473	The Constant Company, LLC	Vultr	Netherlands	https://ams-nl-ping.vultr.com/vultr.com.100MB.bin	407ms
+PASS	262144	AS16276	OVH SAS	OVH	France	https://proof.ovh.net/files/10Mb.dat	474ms
+PASS	262144	AS12876	Scaleway SAS	Scaleway	France	http://ping.online.net/10Mo.dat	460ms
+PASS	262144	AS13335	Cloudflare, Inc.	Cloudflare	-	https://speed.cloudflare.com/__down?bytes=5000000	384ms
+PASS	262144	AS142594	SpeedyPage Ltd	SpeedyPage	United Kingdom	https://lon.lg.speedypage.com/100MB.test	504ms
+PASS	262144	AS20473	The Constant Company, LLC	Vultr	Germany	https://fra-de-ping.vultr.com/vultr.com.100MB.bin	519ms
+PASS	262144	AS36352	HostPapa	RackNerd	Netherlands	https://lg-ams.racknerd.com/test_files/100MB.test	494ms
+ZERO	0	AS213230	Hetzner Online GmbH	Hetzner	USA	https://ash-speed.hetzner.com/100MB.bin	603ms
+PASS	262144	AS53667	FranTech Solutions	BuyVM	Luxembourg	https://speedtest.lu.buyvm.net/100MB.test	534ms
+PASS	262144	AS60404	Liteserver	LiteServer	Netherlands	https://lg-drn.liteserver.nl/testfiles/1GB.testfile	499ms
+PASS	262144	AS50673	Serverius	Serverius	Netherlands	https://speedtest1.serverius.net/files/100mb.bin	591ms
+PASS	262144	AS60117	Host Sailor Ltd	HostSailor	Romania	https://speedtest-ro.hostsailor.com/100MB.test	665ms
+PASS	262144	AS9009	M247 Europe SRL	1Gbits	Austria	https://cc5e1390854feb555b76f50e581dda3d.ip.looking.house/100.mb	519ms
+PASS	262144	AS13030	Init7 (Switzerland) Ltd.	Init7	Switzerland	https://speedtest.init7.net/1GB.dd	735ms
+PASS	262144	AS212531	Interneto vizija	Time4VPS	Lithuania	https://lg.time4vps.com/100MB.test	695ms
+PASS	262144	AS15169	Google LLC	Google Cloud	-	https://storage.googleapis.com/chrome-for-testing-public/157.0.8103.38/linux64/chrome-linux64.zip	797ms
+PASS	262144	AS51430	AltusHost B.V.	AltusHost	Sweden	https://bbb0aa3984f8f705de92c0606ffc58f9.ip.looking.house/100.mb	360ms
+PASS	262144	AS200019	ALEXHOST S.R.L.	AlexHost	Moldova	https://261734c0143968b982ce68b445b194d7.ip.looking.house/100.mb	459ms
+PASS	262144	AS51430	AltusHost B.V.	AltusHost	Netherlands	https://943e51481b71df5f01e019571d61859f.ip.looking.house/100.mb	439ms
+PASS	262144	AS51430	AltusHost B.V.	AltusHost	Switzerland	https://87cea81844cb2d310bdc72550bd12aab.ip.looking.house/100.mb	436ms
+PASS	262144	AS40994	Hohl IT e.U.	Alwyzon	Austria	https://c4ef651ebf60abb96d0965b2d387d76c.ip.looking.house/100.mb	454ms
+PASS	262144	AS402722	Arct Cloud	Arct Cloud	Netherlands	https://9b00a4869c2e838c84a7c3d77ff88ef0.ip.looking.house/100.mb	422ms
+PASS	262144	AS402722	Arct Cloud	Arct Cloud	Germany	https://b4f562e6d6996e04ce178bd68871a782.ip.looking.house/100.mb	446ms
+PASS	262144	AS12989	Black HOST Ltd	BlackHOST	Austria	https://92c21fbcfddff51180fb0bb801408a61.ip.looking.house/100.mb	273ms
+PASS	262144	AS209179	AfriCloud LLC	AFRICLOUD	Portugal	https://75e98772a1e32df4e2c473e524d6b382.ip.looking.house/100.mb	670ms
+PASS	262144	AS51430	AltusHost B.V.	AltusHost	Bulgaria	https://df689ff21cbbbc522c7d24ef77c51dd1.ip.looking.house/100.mb	592ms
+PASS	262144	AS402722	Arct Cloud	Arct Cloud	United Kingdom	https://155421886ab156208561d7cdf2d573a6.ip.looking.house/100.mb	530ms
+PASS	262144	AS58212	dataforest GmbH	Avoro	Germany	https://2b5d808286124880583e370d75e0a497.ip.looking.house/100.mb	408ms
+PASS	262144	AS12989	Black HOST Ltd	BlackHOST	United Kingdom	https://e16f9fdb416c66181b6034b27dac4e2e.ip.looking.house/100.mb	396ms
+PASS	262144	AS12989	Black HOST Ltd	BlackHOST	Netherlands	https://09ba3aff3f73eb10031d695ac9722c07.ip.looking.house/100.mb	355ms
+PASS	262144	AS62005	BlueVPS OU	BlueVPS	Poland	https://e2234d14f312192fa38d8e7233d598b1.ip.looking.house/100.mb	231ms
+PASS	262144	AS62005	BlueVPS OU	BlueVPS	Germany	https://7ade114d80feddad1dd28a53ab9c4078.ip.looking.house/100.mb	350ms
+PASS	262144	AS42708	Glesys AB	BlueVPS	Sweden	https://dcba7f44da578c3ed160f2d9e2df66e0.ip.looking.house/100.mb	117ms
+PASS	262144	AS62240	Clouvider	BlueVPS	United Kingdom	https://6f8bd5c83a832dc213f98cbed1257f43.ip.looking.house/100.mb	404ms
+PASS	262144	AS62240	Clouvider	BlueVPS	United Kingdom	https://2f82700ae0182abb7aed7a7d77aaafcd.ip.looking.house/100.mb	435ms
+PASS	262144	AS16276	OVH SAS	BlueVPS	France	https://150632234a3619e6261670e1d8c18a25.ip.looking.house/100.mb	338ms
+PASS	262144	AS62005	BlueVPS OU	BlueVPS	Netherlands	https://b8c0f4efc098fe63c3fd7492f7413a81.ip.looking.house/100.mb	293ms
+PASS	262144	AS12989	Black HOST Ltd	BlackHOST	USA	https://a45690d1c2001fcb889842bebff77574.ip.looking.house/100.mb	1045ms
+PASS	262144	AS197648	CLOUDLAYER8 LIMITED	BlueVPS	Cyprus	https://afef7aadffcd13382ed7d0262ac3c89b.ip.looking.house/100.mb	782ms
+PASS	262144	AS62005	BlueVPS OU	BlueVPS	USA	https://4b12da7315058cac3efa5496ee3ead55.ip.looking.house/100.mb	1161ms
+PASS	262144	AS394203	Chicagoservers.org LLC	ChicagoServers	Netherlands	https://35cf8ab4e3b5af8e11af63c8a00b12c0.ip.looking.house/100.mb	295ms
+PASS	262144	AS16276	OVH SAS	BlueVPS	Canada	https://b102c33f5436a48ad19c0d6fe0b226ea.ip.looking.house/100.mb	1012ms
+PASS	262144	AS62005	BlueVPS OU	BlueVPS	Israel	https://5b255bc51b658ce36c21fa4a385569d0.ip.looking.house/100.mb	1187ms
+PASS	262144	AS62005	BlueVPS OU	BlueVPS	USA	https://6dca7002d9c1490c6d68e95193a70a51.ip.looking.house/100.mb	1462ms
+PASS	262144	AS40156	The Optimal Link Corporation	CharityHost	USA	https://f1abc393efe8aa5918dbbdc4859babc1.ip.looking.house/100.mb	1013ms
+PASS	262144	AS200211	CLIQHOST Autonomous System	Cliqhost	Moldova	https://43e94551c014830e0d9f9fd63ae27534.ip.looking.house/100.mb	359ms
+PASS	262144	AS393336	Catalyst Host LLC	Catalyst Host LLC	USA	https://8f17d6b59dab92509cecf8952c74ea8f.ip.looking.house/100.mb	1203ms
+PASS	262144	AS394203	Chicagoservers.org LLC	ChicagoServers	USA	https://933bd14af9b5c12f8ca3c6628b34d2ac.ip.looking.house/100.mb	937ms
+PASS	262144	AS49791	Newserverlife LLC	CharityHost	USA	https://7bfcdc98b34ecdf7f51cce62ed36e5d5.ip.looking.house/100.mb	1214ms
+PASS	262144	AS12989	Black HOST Ltd	BlackHOST	Japan	https://d37fd4d9ee33bd1b04226a0ce02a2b29.ip.looking.house/100.mb	1994ms
+PASS	262144	AS150249	PT Atharva Telematika Persada	Atharva	Indonesia	https://ae9576e7b34f6703a2b9a0b9a9599b3f.ip.looking.house/100.mb	2161ms
+PASS	262144	AS142264	PT SKY BASE TECHNOLOGHY DIGITAL	Sky Base Technology Digital	Indonesia	https://61a19d5a726a1eda8324db222b6c2fe1.ip.looking.house/100.mb	1391ms
+PASS	262144	AS202759	RJ Network OU	Core Hosting	Estonia	https://268254166963f2ed35623657fe418ad7.ip.looking.house/100.mb	106ms
+PASS	262144	AS51852	Private Layer INC	CloudArion	Switzerland	https://df4065a77379a5005ae237b982efb89c.ip.looking.house/100.mb	324ms
+PASS	262144	AS207847	CloudBlast LLC	Cloudblast	United Kingdom	https://9c6532109064d322e782e364cdeec1b7.ip.looking.house/100.mb	345ms
+PASS	262144	AS394203	Chicagoservers.org LLC	ChicagoServers	USA	https://971ba5e3327c143ef4dd7520318a797f.ip.looking.house/100.mb	1024ms
+PASS	262144	AS150249	PT Atharva Telematika Persada	Atharva	Indonesia	https://ecaf2babe92f7d1fc9b46741eecc87e3.ip.looking.house/100.mb	2541ms
+PASS	262144	AS207847	CloudBlast LLC	Cloudblast	Netherlands	https://ea57d4b0ac2b925d78ea558072cbe3d5.ip.looking.house/100.mb	331ms
+PASS	262144	AS394203	Chicagoservers.org LLC	ChicagoServers	USA	https://75bc160f8f4261bd1509854aec6b5941.ip.looking.house/100.mb	1056ms
+PASS	262144	AS133398	Tele Asia Limited	BlueVPS	Hong Kong	https://cad7ff0a99b2a5d4056a0a365ec3a5f0.ip.looking.house/100.mb	2426ms
+PASS	262144	AS394203	Chicagoservers.org LLC	ChicagoServers	USA	https://036c5f363d831155c390cd065afafaf7.ip.looking.house/100.mb	1196ms
+PASS	262144	AS16019	Vodafone Czech Republic a.s.	FinalTek	Czech Republic	https://41d627229b1cffb691d7d5a582b01052.ip.looking.house/100.mb	324ms
+PASS	262144	AS200651	FlokiNET ehf	FlokiNET	Netherlands	https://6cd8b3e5124633c2da2467e897136972.ip.looking.house/100.mb	354ms
+PASS	262144	AS200651	FlokiNET ehf	FlokiNET	Romania	https://f6d2d905e522333693f09f4ffbb56dc6.ip.looking.house/100.mb	516ms
+PASS	262144	AS200904	FOXCLOUD LLP	FOXCLOUD	Netherlands	https://31c39faf6a32dcf020c6cf1054147aca.ip.looking.house/100.mb	307ms
+PASS	262144	AS209482	FOXCLOUD COMMUNICATIONS SRL	FOXCLOUD	Moldova	https://980b9b49f724ed136f461df81e3fc0a6.ip.looking.house/100.mb	278ms
+PASS	262144	AS200651	FlokiNET ehf	FlokiNET	Iceland	https://534b706b513c8336aba2a9f71318e4e2.ip.looking.house/100.mb	628ms
+PASS	262144	AS200651	FlokiNET ehf	FlokiNET	Finland	https://af2888836bf7be37dfd60d9774632c3b.ip.looking.house/100.mb	490ms
+PASS	262144	AS36352	HostPapa	DediRock	USA	https://1f4015d34a42ab5b4b8769be1a2f459f.ip.looking.house/100.mb	861ms
+PASS	262144	AS207847	CloudBlast LLC	Cloudblast	USA	https://110dfd52009c9313a0a38a97467a3079.ip.looking.house/100.mb	1146ms
+PASS	262144	AS202696	Trusted Network LLC	FOXCLOUD	Russia	https://bfbd6a9011b85ed47b8f6be453cef37d.ip.looking.house/100.mb	221ms
+PASS	262144	AS40676	Psychz Networks	CloudArion	USA	https://1521877c63a17b197d353a7807061d2a.ip.looking.house/100.mb	1460ms
+PASS	262144	AS36352	HostPapa	DediRock	USA	https://93db94417c096eff21a35c468ef96a30.ip.looking.house/100.mb	1237ms
+PASS	262144	AS215703	FREAKHOSTING LTD	FreakHosting	United Kingdom	https://32c9f2649ba6a2840372438132b767c6.ip.looking.house/100.mb	371ms
+PASS	262144	AS215703	FREAKHOSTING LTD	FreakHosting	Germany	https://54641e05bd73878a965cc373ca9c877c.ip.looking.house/100.mb	319ms
+PASS	262144	AS207847	CloudBlast LLC	Cloudblast	Hong Kong	https://c8189f7f27c9ccf3a2748fac39e6b7d3.ip.looking.house/100.mb	1556ms
+PASS	262144	AS154317	VyomCloud	ClubHosty	India	https://9d1de2fee3da52cbd1287a42a279046d.ip.looking.house/100.mb	1414ms
+PASS	262144	AS215703	FREAKHOSTING LTD	FreakHosting	Poland	https://9b865a62c4fd4074233378eefc2bc6fe.ip.looking.house/100.mb	270ms
+PASS	262144	AS53356	Free Range Cloud Hosting Inc.	Free Range Cloud	Norway	https://3fe9a0ab9056cbc8f0d81d9bc1536be6.ip.looking.house/100.mb	169ms
+PASS	262144	AS53356	Free Range Cloud Hosting Inc.	Free Range Cloud	Netherlands	https://79628730587fec29a752c515e2c81c26.ip.looking.house/100.mb	271ms
+PASS	262144	AS133619	DESIVPS	DesiVPS	USA	https://86958cfb5442d7c1317df9d87d3d1bf6.ip.looking.house/100.mb	1421ms
+PASS	262144	AS215703	FREAKHOSTING LTD	FreakHosting	Romania	https://74894340c3708c57d62318ec45ee22bc.ip.looking.house/100.mb	607ms
+PASS	262144	AS200904	FOXCLOUD LLP	FOXCLOUD	USA	https://0ad5259ccdccd78a82c512d426123612.ip.looking.house/100.mb	1065ms
+PASS	262144	AS135133	PI DATA CENTERS PRIVATE LIMITED	DesiVPS	India	https://ca3cebaa5d1874e9cdf2c8ec3ec7c0a3.ip.looking.house/100.mb	1714ms
+PASS	262144	AS215703	FREAKHOSTING LTD	FreakHosting	USA	https://12912cfd2c0105a540e2265356b99174.ip.looking.house/100.mb	1178ms
+PASS	262144	AS59891	FSIT AG	FSIT AG	Switzerland	https://26c8eb41d03e082cd7d0eb122a0fe8cd.ip.looking.house/100.mb	352ms
+PASS	262144	AS215703	FREAKHOSTING LTD	FreakHosting	USA	https://bce31fe9a94c02df501bd8dc123b31e7.ip.looking.house/100.mb	1224ms
+PASS	262144	AS140941	Full Time Hosting	FullTime Hosting	Germany	https://9d6eddd5e2ff95c8dde7317f0d5bbf05.ip.looking.house/100.mb	359ms
+PASS	262144	AS43108	GARMTECH LP	GARMTECH	Latvia	https://bf37417ff49f26f1dc5a0273cf9bb205.ip.looking.house/100.mb	136ms
+PASS	262144	AS53356	Free Range Cloud Hosting Inc.	Free Range Cloud	Canada	https://f3bc2d52ddc1ccb6f1a5f4cb932627be.ip.looking.house/100.mb	1025ms
+PASS	262144	AS215703	FREAKHOSTING LTD	FreakHosting	USA	https://ed34576368f07baa13ec06fde5f2d9dc.ip.looking.house/100.mb	1473ms
+PASS	262144	AS53356	Free Range Cloud Hosting Inc.	Free Range Cloud	USA	https://8750e8ed6ce827dd95b9211dda488d0f.ip.looking.house/100.mb	965ms
+PASS	262144	AS208440	GmhostGrupp OU	GMHost	Estonia	https://93084261bb68ff3212dedb81abee2ec3.ip.looking.house/100.mb	128ms
+PASS	262144	AS53356	Free Range Cloud Hosting Inc.	Free Range Cloud	USA	https://dab42261a787c2429bf4cf78d0cca462.ip.looking.house/100.mb	1376ms
+PASS	262144	AS44066	firstcolo GmbH	GMHost	Germany	https://33920fc28bebbe278f152eadaf6fa1a7.ip.looking.house/100.mb	319ms
+PASS	262144	AS53356	Free Range Cloud Hosting Inc.	Free Range Cloud	USA	https://fa05ea99dc5bef4e4fc90cb1bb1a7ded.ip.looking.house/100.mb	1121ms
+PASS	262144	AS53356	Free Range Cloud Hosting Inc.	Free Range Cloud	Canada	https://aacb18fd790143fe673d05ed84e63811.ip.looking.house/100.mb	1281ms
+PASS	262144	AS53356	Free Range Cloud Hosting Inc.	Free Range Cloud	Canada	https://6b323e8fbe780ed537ca5374f18eed92.ip.looking.house/100.mb	1099ms
+PASS	262144	AS53356	Free Range Cloud Hosting Inc.	Free Range Cloud	Canada	https://e1a8b4f21180587519203068738fe1d1.ip.looking.house/100.mb	1034ms
+PASS	262144	AS59432	GINERNET S.L.	GinerNet	Spain	https://32b8c24ca22370b05c06f4994e6f4ced.ip.looking.house/100.mb	564ms
+PASS	262144	AS60781	LeaseWeb Netherlands B.V.	GoZENhost	Netherlands	https://4f1b9ba046d659f4bd5ac3f1f6569b0c.ip.looking.house/100.mb	332ms
+PASS	262144	AS201094	Mulgin Alexander Sergeevich	GMHost	Ukraine	https://89f13445941d513d6b59c2e9df9a6149.ip.looking.house/100.mb	549ms
+PASS	262144	AS53356	Free Range Cloud Hosting Inc.	Free Range Cloud	Canada	https://443985ac8ad6ff5dc8a5b3198d2dab83.ip.looking.house/100.mb	1324ms
+PASS	262144	AS215730	H2NEXUS CLOUD SERVICES - FZCO	h2.nexus	Germany	https://da7c19fbb7f13bfa740e71c42732d0f3.ip.looking.house/100.mb	307ms
+PASS	262144	AS34689	Castlegem SRL	Hosteroid	Lithuania	https://5e04d8d126c160e74e28c638de6a9fd0.ip.looking.house/100.mb	136ms
+PASS	262144	AS207295	Akhtar Technologies Limited	HammerVM	Sweden	https://ae06d584db1fc18ef7ef8bf69d51f063.ip.looking.house/100.mb	421ms
+PASS	262144	AS215691	AP INTERACTIVE SOLUTIONS SL	Hostealo	Netherlands	https://ef817cca35b44c3dcc2d86e9a1fb563f.ip.looking.house/100.mb	385ms
+PASS	262144	AS61251	Host4Biz sp. z o.o.	Host4biz	Poland	https://ac1bfbb152cdf750ce899430f651aa1f.ip.looking.house/100.mb	444ms
+PASS	262144	AS34689	Castlegem SRL	Hosteroid	Netherlands	https://1c89e1b9d5e86cadea506844fff54075.ip.looking.house/100.mb	288ms
+PASS	262144	AS215691	AP INTERACTIVE SOLUTIONS SL	Hostealo	Spain	https://dd001a0f54e3ecd60c7eb08788812c16.ip.looking.house/100.mb	525ms
+PASS	262144	AS211971	Goodhost.KZ LLP	Goodhost	Kazakhstan	https://9e96c620158459192e209ba5159680e9.ip.looking.house/100.mb	897ms
+PASS	262144	AS47264	Iomart Managed Services Limited	Hosteroid	United Kingdom	https://6567a52effa72f105b82c31ca94cc1d5.ip.looking.house/100.mb	362ms
+PASS	262144	AS9009	M247 Europe SRL	Hosteroid	Romania	https://8a2030add4e9289add941738ddbb8da1.ip.looking.house/100.mb	491ms
+PASS	262144	AS62005	BlueVPS OU	BlueVPS	USA	https://e10f92b9730f0781b2fe278d3805d3c2.ip.looking.house/100.mb	4969ms
+PASS	262144	AS8218	Zayo Infrastructure France SA	Hosteroid	Austria	https://d58779c45a0c28ae8c5181a99873b46f.ip.looking.house/100.mb	257ms
+PASS	262144	AS34689	Castlegem SRL	Hosteroid	Slovakia	https://46cb5be80cb41e6a6590f97be2de1b98.ip.looking.house/100.mb	268ms
+PASS	262144	AS215703	FREAKHOSTING LTD	FreakHosting	USA	https://9daa4c92867af3591a545140c3a6b5df.ip.looking.house/100.mb	2416ms
+PASS	262144	AS30633	Leaseweb USA, Inc.	GoZENhost	USA	https://03bfcf7e01bf74518670bcfa1e30138a.ip.looking.house/100.mb	1046ms
+PASS	262144	AS34689	Castlegem SRL	Hosteroid	Albania	https://2ae124a164cde4ea426d245ecb71525f.ip.looking.house/100.mb	524ms
+PASS	262144	AS63473	HostHatch, LLC	HostHatch	Sweden	https://cc8b4ef562d6d7f9255a9e7caf0c82d9.ip.looking.house/100.mb	297ms
+PASS	262144	AS63473	HostHatch, LLC	HostHatch	Netherlands	https://f07f09e809f0591f34f8a98d3dc8a37c.ip.looking.house/100.mb	339ms
+PASS	262144	AS63473	HostHatch, LLC	HostHatch	Norway	https://b42c82240eb58629e730a5dd536723f0.ip.looking.house/100.mb	370ms
+PASS	262144	AS202306	HOSTGLOBAL.PLUS LTD	HostGlobal	United Kingdom	https://165b670894880f8cb8779521df83d7c0.ip.looking.house/100.mb	650ms
+PASS	262144	AS63473	HostHatch, LLC	HostHatch	Switzerland	https://1e0d3cd5f4ad659ede99f3388ecf57a1.ip.looking.house/100.mb	418ms
+PASS	262144	AS29838	Atlantic Metro Communications II, Inc.	Hosteroid	USA	https://bbf9464cd1f1cc68f0bde372a1217dd8.ip.looking.house/100.mb	1064ms
+PASS	262144	AS48031	Ivanov Vitaliy Sergeevich	Hosting International	Ukraine	https://f72e190bda77d5e3b5e9811d1b047d6e.ip.looking.house/100.mb	209ms
+PASS	262144	AS63473	HostHatch, LLC	HostHatch	Austria	https://d617a4ab1887821c04cb606fb0b6c65e.ip.looking.house/100.mb	390ms
+PASS	262144	AS63473	HostHatch, LLC	HostHatch	United Kingdom	https://e4af98288c703ea1fbd5e289e7d87e5f.ip.looking.house/100.mb	432ms
+PASS	262144	AS25467	Akton d.o.o.	Akton Serbia	Serbia	https://5635c44245ca2d2771dddc3c94ecff68.ip.looking.house/100.mb	394ms
+PASS	262144	AS213354	Iryna Oliinyk	Hosting International	Czech Republic	https://55214e59786c4a1b08b2f7fa88dea8ca.ip.looking.house/100.mb	510ms
+PASS	262144	AS59939	WIBO Baltic UAB	HOSTLIFE	Netherlands	https://7b820c9fc4cb32bb4cfbdf094eff3fb2.ip.looking.house/100.mb	327ms
+PASS	262144	AS59939	WIBO Baltic UAB	HOSTLIFE	Germany	https://652bf02434fbb5671566dec8e7b99d4c.ip.looking.house/100.mb	308ms
+PASS	262144	AS49870	Alsycon B.V.	Host Mayo	Netherlands	https://1d1f6d7376db8f46f34fa84cc5675854.ip.looking.house/100.mb	337ms
+PASS	262144	AS63473	HostHatch, LLC	HostHatch	USA	https://58a6d2c382ec20b422d7e3526e6c5a1e.ip.looking.house/100.mb	1014ms
+PASS	262144	AS132372	GB Network Solutions Sdn. Bhd.	GB Network Solutions	Malaysia	https://894e01879ff1db89364e12f8896375f0.ip.looking.house/100.mb	2202ms
+PASS	262144	AS59939	WIBO Baltic UAB	HOSTLIFE	Ukraine	https://badf75c70febc7d580bad84e38830589.ip.looking.house/100.mb	480ms
+PASS	262144	AS63473	HostHatch, LLC	HostHatch	USA	https://b100ffe556d676073f090e273daf0428.ip.looking.house/100.mb	1126ms
+PASS	262144	AS46475	Limestone Networks, Inc.	HostNamaste	Netherlands	https://772436a63e2ad7991205de6e77305d1d.ip.looking.house/100.mb	292ms
+PASS	262144	AS46475	Limestone Networks, Inc.	HostNamaste	France	https://4d2ed024d26bc7630f3b5bfaf7814b6c.ip.looking.house/100.mb	419ms
+PASS	262144	AS63473	HostHatch, LLC	HostHatch	USA	https://9a45768b2c831f8ad05736d79b955a99.ip.looking.house/100.mb	1519ms
+PASS	262144	AS153221	HOSTGRABER	HostGraber	India	https://ac3851c447e9780b5e13dfb886110f2d.ip.looking.house/100.mb	1799ms
+PASS	262144	AS60117	Host Sailor Ltd	HostSailor	Netherlands	https://3ac1c39e4f4f6c219bb8f32d17bf9c71.ip.looking.house/100.mb	264ms
+PASS	262144	AS133210	EN Technologies Pte Ltd	Hosting International	Singapore	https://f63aa297e8bf9fa28a958b2e5bf946d9.ip.looking.house/100.mb	1615ms
+PASS	262144	AS199741	TransitX BYOIP	hostworld Limited	United Kingdom	https://4c950411b9bf7ebee891f7e25b4dafba.ip.looking.house/100.mb	289ms
+PASS	262144	AS20860	IOMART CLOUD SERVICES LIMITED	hostworld Limited	United Kingdom	https://0364278aaab466d40f252dfbd9369b98.ip.looking.house/100.mb	315ms
+PASS	262144	AS36352	HostPapa	HostNamaste	Canada	https://0e92e527e857700d89cdf9d64e21a4ec.ip.looking.house/100.mb	1001ms
+PASS	262144	AS26042	FiberState, LLC	Host Mayo	USA	https://118426f37a7c77f51a3b8631c71e2fe3.ip.looking.house/100.mb	1297ms
+PASS	262144	AS35916	MULTACOM CORPORATION	HostNamaste	USA	https://61fcb7af75d60c793aafdd9ac3827d91.ip.looking.house/100.mb	1243ms
+ZERO	0	AS201070	Bondarenko Oksana Volodymyrivna	3v-Hosting	Netherlands	https://b9e67a8a0d3c7d810a99f6d394a5b265.ip.looking.house/100.mb	8241ms
+PASS	262144	AS46475	Limestone Networks, Inc.	HostNamaste	USA	https://823ec8f0f004cd4501dc5ecf202602fe.ip.looking.house/100.mb	1227ms
+PASS	262144	AS14522	SERVICIOS DE TELECOMUNICACIONES SETEL S.A. (XTRIM EC)	HostingSUPREMO	Ecuador	https://10eb964b657e09739c0b11a24d06d14b.ip.looking.house/100.mb	1620ms
+PASS	262144	AS399804	Hostodo	Hostodo	USA	https://cc6bee9e256522bf2667686eebdf7ac1.ip.looking.house/100.mb	1094ms
+PASS	262144	AS399804	Hostodo	Hostodo	USA	https://e889a3ce429c23b25807c74d2a494b79.ip.looking.house/100.mb	954ms
+PASS	262144	AS199741	TransitX BYOIP	hostworld Limited	United Kingdom	https://8a73c7c0793c3bbd60568646b2a7121f.ip.looking.house/100.mb	311ms
+PASS	262144	AS26548	PureVoltage Hosting Inc.	hostworld Limited	USA	https://3130ffae1a3775f15ca04e660210a6c1.ip.looking.house/100.mb	764ms
+PASS	262144	AS59711	HZ Hosting Ltd	HostZealot	Sweden	https://8e90effc5edf1649ecb8866637b00307.ip.looking.house/100.mb	198ms
+PASS	262144	AS59711	HZ Hosting Ltd	HostZealot	Netherlands	https://7cd7fc3f65de6c273ac98b82cae41dd7.ip.looking.house/100.mb	317ms
+PASS	262144	AS59711	HZ Hosting Ltd	HostZealot	Poland	https://afc8df5f3caa0fa4ac08f4b2fa52b717.ip.looking.house/100.mb	326ms
+PASS	262144	AS42655	ON-LINE Ltd	HyperHost	Ukraine	https://0634d3e66697fad9807aaa9cbad1b109.ip.looking.house/100.mb	216ms
+PASS	262144	AS51692	HyberHost (HOSTMYNET)	HyberHost	United Kingdom	https://8511ad790fb0d0c5767c55af09b3d894.ip.looking.house/100.mb	321ms
+PASS	262144	AS9678	HostingInside LTD	HostingInside LTD	Taiwan	https://66584d51594d03c2c92a9aea34d51cbd.ip.looking.house/100.mb	2185ms
+PASS	262144	AS21100	ROUTE 95 LLC	HyperHost	Netherlands	https://c3b4a03574e7e62f4ca0c028bc294fa9.ip.looking.house/100.mb	290ms
+PASS	262144	AS197648	CLOUDLAYER8 LIMITED	HostZealot	Cyprus	https://4888057043d6471f94f5ec03e1d9ddd8.ip.looking.house/100.mb	699ms
+PASS	262144	AS40663	IncogNet LLC	IncogNet	Netherlands	https://8235c3ccbbbe9c79ace316e2155774d6.ip.looking.house/100.mb	302ms
+PASS	262144	AS60117	Host Sailor Ltd	HostSailor	USA	https://93f3cde586f8e2444e6e2841c6604535.ip.looking.house/100.mb	1478ms
+PASS	262144	AS210734	IPHOSTER OU	IPhoster	Poland	https://77ef60b3dd134053fe59a0f3995907f1.ip.looking.house/100.mb	150ms
+PASS	262144	AS60602	Inovare-Prim SRL	IP Host	Moldova	https://66de7e3add72cf8fb67203ad0e7a0678.ip.looking.house/100.mb	327ms
+PASS	262144	AS202015	HZ Hosting Ltd	HostZealot	USA	https://b197690e4bc5a22c9b51c2009250c551.ip.looking.house/100.mb	926ms
+PASS	262144	AS16276	OVH SAS	IPhoster	Germany	https://2cbb9d349d10be81d4bb745d0bd358a3.ip.looking.house/100.mb	324ms
+PASS	262144	AS206411	Fastwarp LLP	IPhoster	France	https://1c3d91d694937ec309d1dc9c0b891df3.ip.looking.house/100.mb	320ms
+PASS	262144	AS202015	HZ Hosting Ltd	HostZealot	USA	https://e4216fc3b0699ab5c1965eac8432aa8c.ip.looking.house/100.mb	1095ms
+PASS	262144	AS50979	ROUTE 95 LLC	ITL DC	Latvia	https://ce21602479f0f76c48b3abb656910139.ip.looking.house/100.mb	48ms
+PASS	262144	AS51692	HyberHost (HOSTMYNET)	HyberHost	Canada	https://c341e15bd3e1c11fccd0ad99157351da.ip.looking.house/100.mb	863ms
+PASS	262144	AS16276	OVH SAS	IPhoster	United Kingdom	https://f14df5d576557fcfe34395e2eb777f13.ip.looking.house/100.mb	413ms
+PASS	262144	AS44894	Ukrchermetavtomatika LLC	ISPLevel	Ukraine	https://4cb224b8a39961c5f92eef2018f10dc9.ip.looking.house/100.mb	396ms
+PASS	262144	AS21100	ROUTE 95 LLC	ITL DC	Ukraine	https://321e688f347dfbdd87a94383dc5d280f.ip.looking.house/100.mb	232ms
+PASS	262144	AS201525	HZ Hosting Ltd	HostZealot	Canada	https://5c994823a709bf39d91815d60803d852.ip.looking.house/100.mb	1106ms
+PASS	262144	AS59729	ROUTE 95 LLC	ITL DC	Bulgaria	https://7732e1ba44ef8435ddc4f5190544088d.ip.looking.house/100.mb	286ms
+PASS	262144	AS8254	GREEN FLOID LLC	ITL DC	Spain	https://7ceaa8bb1bb311c29b5677c2ac9b9c12.ip.looking.house/100.mb	347ms
+PASS	262144	AS21100	ROUTE 95 LLC	ITL DC	Netherlands	https://617392de7964b393591878a60990a01e.ip.looking.house/100.mb	290ms
+PASS	262144	AS16276	OVH SAS	IPhoster	USA	https://280fad9b79639fa7fa62263e91a49c60.ip.looking.house/100.mb	888ms
+PASS	262144	AS204957	ROUTE 95 LLC	ITL DC	Czech Republic	https://374f124d5cf06af96af0ba44ff031ad9.ip.looking.house/100.mb	272ms
+PASS	262144	AS138244	HOSTZOP CLOUD SERVICES PRIVATE LIMITED	HostZop	India	https://c75857ed58cb4e9665f36256ded8e036.ip.looking.house/100.mb	1398ms
+PASS	262144	AS21100	ROUTE 95 LLC	ITL DC	Germany	https://4f52b78f706e3857c38040285765248e.ip.looking.house/100.mb	260ms
+PASS	262144	AS204957	ROUTE 95 LLC	ITL DC	Switzerland	https://f66bb3f2632fc67e4004a160d5c8bdfe.ip.looking.house/100.mb	432ms
+PASS	262144	AS272696	HOSTING NOW NET LTDA	Hosting Now BR	Brazil	https://bbcdd5699a918656ee302f5862c22270.ip.looking.house/100.mb	3262ms
+PASS	262144	AS204957	ROUTE 95 LLC	ITL DC	Poland	https://8208b699eedc43aec87c030621c383c7.ip.looking.house/100.mb	144ms
+PASS	262144	AS40663	IncogNet LLC	IncogNet	USA	https://57c7c8c4b581cb4bae5cdf36ef98f7bc.ip.looking.house/100.mb	1404ms
+PASS	262144	AS8254	GREEN FLOID LLC	ITL DC	Greece	https://a3bb698ecbab39011e9d1f0c897d5baa.ip.looking.house/100.mb	657ms
+PASS	262144	AS21100	ROUTE 95 LLC	ITL DC	Italy	https://f4662970a69b4f3e7eee58a08419867a.ip.looking.house/100.mb	351ms
+PASS	262144	AS204957	ROUTE 95 LLC	ITL DC	Romania	https://48562099b7cf62256d7c4173f1f1bdc8.ip.looking.house/100.mb	547ms
+PASS	262144	AS204957	ROUTE 95 LLC	ITL DC	USA	https://79b47f935182fac3f6c5fd5af89c0ff1.ip.looking.house/100.mb	919ms
+PASS	262144	AS204957	ROUTE 95 LLC	ITL DC	USA	https://62bf89eb37dc47612ef721b6adfc801f.ip.looking.house/100.mb	1006ms
+PASS	262144	AS46562	Performive LLC	ITL DC	USA	https://4f07f309f8200c2487ebbbbf63618393.ip.looking.house/100.mb	1415ms
+PASS	262144	AS16276	OVH SAS	KarasHost	France	https://406334ec8155cad0e11de044fc9411c0.ip.looking.house/100.mb	303ms
+PASS	262144	AS204957	ROUTE 95 LLC	ITL DC	USA	https://dd473f54e1d671714d49ce19fed0376d.ip.looking.house/100.mb	1263ms
+PASS	262144	AS203363	Kuroit Limited	Kuroit	Netherlands	https://3d477df34f86324c2e1a5a193464ec0c.ip.looking.house/100.mb	243ms
+PASS	262144	AS8254	GREEN FLOID LLC	ITL DC	USA	https://fc79bb0dc09ec6352b97cdaa1d3dd711.ip.looking.house/100.mb	1132ms
+PASS	262144	AS203363	Kuroit Limited	KhanWebHost	United Kingdom	https://a28a25a7d3a3cda222558ab357d43375.ip.looking.house/100.mb	378ms
+PASS	262144	AS152586	Kuroit	Kuroit	United Kingdom	https://0cc0c30e17ab28bcba02f006fed35890.ip.looking.house/100.mb	315ms
+PASS	262144	AS397373	H4Y Technologies LLC	iWebFusion	USA	https://e6f8c932cb7484f373ed53fce4b4086a.ip.looking.house/100.mb	1007ms
+PASS	262144	AS204957	ROUTE 95 LLC	ITL DC	Singapore	https://c50bcb35783dc8027928c5cd52f0b615.ip.looking.house/100.mb	1403ms
+PASS	262144	AS397373	H4Y Technologies LLC	iWebFusion	USA	https://aebd915027c44b1a069e8e2c57cc1a67.ip.looking.house/100.mb	1107ms
+PASS	262144	AS16276	OVH SAS	KarasHost	Canada	https://8a2076a49a5ee081e5d0869ef1c32b96.ip.looking.house/100.mb	985ms
+PASS	262144	AS31863	Centrilogic, Inc.	KarasHost	USA	https://b94f5591704e4729ec2738b256070a1f.ip.looking.house/100.mb	962ms
+PASS	262144	AS397373	H4Y Technologies LLC	iWebFusion	USA	https://7a7ed0d148dbb4408fb1db039e46ec77.ip.looking.house/100.mb	1399ms
+PASS	262144	AS26286	MysticDev LLC	KhanWebHost	USA	https://885c12d20682ba152087cffe1dddf0fd.ip.looking.house/100.mb	1055ms
+PASS	262144	AS13768	Aptum Technologies	iWebFusion	USA	https://643bddf832223cd30fd8462d3956017d.ip.looking.house/100.mb	1380ms
+PASS	262144	AS203363	Kuroit Limited	Kuroit	United Kingdom	https://9fe58ae3404836809b163c2e86d8e822.ip.looking.house/100.mb	342ms
+PASS	262144	AS152586	Kuroit	Kuroit	USA	https://bd8581703628f7e794f7169554652260.ip.looking.house/100.mb	884ms
+PASS	262144	AS136557	Host Universal Pty Ltd	Kuroit	Singapore	https://d5ceab4a36b96fa4b0bb8272dd8c85d7.ip.looking.house/100.mb	1305ms
+PASS	262144	AS152586	Kuroit	Kuroit	USA	https://846116ef6a16137c5846e7ebbce0d53c.ip.looking.house/100.mb	940ms
+PASS	262144	AS203020	HostRoyale Technologies Pvt Ltd	Leapswitch	Portugal	https://0dad7e29ca42049a4cb14ca9ccf48477.ip.looking.house/100.mb	512ms
+PASS	262144	AS152586	Kuroit	Kuroit	USA	https://0453ac8da2fd8e59d3da3d5d1fb8742c.ip.looking.house/100.mb	1230ms
+PASS	262144	AS152586	Kuroit	Kuroit	USA	https://dd5e835cf29c8cbcfbc4986e2871b11e.ip.looking.house/100.mb	1233ms
+PASS	262144	AS203020	HostRoyale Technologies Pvt Ltd	Leapswitch	Spain	https://210ec8a9636efe313fc00cd7823f3515.ip.looking.house/100.mb	416ms
+PASS	262144	AS152586	Kuroit	Kuroit	USA	https://8e3613050a150b830943e56d54e2b808.ip.looking.house/100.mb	1079ms
+PASS	262144	AS34549	meerfarbig GmbH & Co. KG	Leapswitch	Germany	https://5ea615eeb9fb039fa5305e9251b0813f.ip.looking.house/100.mb	307ms
+PASS	262144	AS51852	Private Layer INC	Legionbox	Switzerland	https://62d4eb3b79245dd9290408a5ad0bd254.ip.looking.house/100.mb	300ms
+PASS	262144	AS132335	LEAPSWITCH NETWORKS PRIVATE LIMITED	Leapswitch	India	https://966932289a951001e75a58991cda045e.ip.looking.house/100.mb	1049ms
+PASS	262144	AS60404	Liteserver	LiteServer B.V.	Netherlands	https://19537fcfcc8bf3b061f574205f9dbae8.ip.looking.house/100.mb	279ms
+PASS	262144	AS14061	DigitalOcean, LLC	LOOKING HOUSE	United Kingdom	https://de9aec0cb612cc07154d6fda7366ba57.ip.looking.house/100.mb	331ms
+PASS	262144	AS132335	LEAPSWITCH NETWORKS PRIVATE LIMITED	Leapswitch	USA	https://c3ae32725c14b75d93386fe40c09aa56.ip.looking.house/100.mb	1046ms
+PASS	262144	AS146943	Tier 4 Cloud Services	Leapswitch	India	https://dc1331818d540f27d22eeecd8be6ef38.ip.looking.house/100.mb	1421ms
+PASS	262144	AS56380	''IT FRUIT'' S.R.L.	MangoHost	Moldova	https://b0df249ea2132113074fcbb424182639.ip.looking.house/100.mb	341ms
+PASS	262144	AS35779	mCloud doo	mCloud	Serbia	https://f7b14b45620d24b711957d9f7b1efa03.ip.looking.house/100.mb	324ms
+PASS	262144	AS136557	Host Universal Pty Ltd	Kuroit	Japan	https://5c6a9d2477689be07f4f0d89ce05d7eb.ip.looking.house/100.mb	1850ms
+PASS	262144	AS14061	DigitalOcean, LLC	LOOKING HOUSE	USA	https://b3540cc05b33ec09a385e61bb376f7df.ip.looking.house/100.mb	815ms
+PASS	262144	AS132335	LEAPSWITCH NETWORKS PRIVATE LIMITED	Leapswitch	India	https://23eef7c99b9c92d70e6d32c1b0d8e1e3.ip.looking.house/100.mb	1636ms
+PASS	262144	AS208450	Megahost Kazakhstan TOO	Megahost	Kazakhstan	https://c7bfb62084b7136b20bcb6d1e64f6b24.ip.looking.house/100.mb	503ms
+PASS	262144	AS208450	Megahost Kazakhstan TOO	Megahost	Kazakhstan	https://e0bdcd5d81a479f499d37472f379555d.ip.looking.house/100.mb	711ms
+PASS	262144	AS208450	Megahost Kazakhstan TOO	Megahost	Kazakhstan	https://3edccdf3d2ced92d149cf25143749f20.ip.looking.house/100.mb	752ms
+PASS	262144	AS39798	MivoCloud SRL	MivoCloud	Moldova	https://96d061fdf0b4fda05ae4718c90571779.ip.looking.house/100.mb	500ms
+PASS	262144	AS40676	Psychz Networks	Legionbox	USA	https://046bc90d424feab0a23ceeb6456c89b4.ip.looking.house/100.mb	1385ms
+PASS	262144	AS133398	Tele Asia Limited	MLNL.HOST	Lithuania	https://4077e9df03abdedfd9db9313bb232df2.ip.looking.house/100.mb	244ms
+PASS	262144	AS39798	MivoCloud SRL	MivoCloud	Romania	https://f4fc706950afeac8f9ba21b327da8bb4.ip.looking.house/100.mb	478ms
+PASS	262144	AS135392	MillenialHost Limited	MLNL.HOST	Netherlands	https://2a46959c4d0fb68b45479e244783ff23.ip.looking.house/100.mb	242ms
+PASS	262144	AS917	Misaka Network, Inc.	Misaka Network Inc	USA	https://52b5f8f1eb23f544a433b7286d49f6ca.ip.looking.house/100.mb	982ms
+ZERO	0	AS219200	Cryphora Limited	Hiddence	Germany	https://e016923ac32418e21ebde15d98586368.ip.looking.house/100.mb	8099ms
+PASS	262144	AS135392	MillenialHost Limited	MLNL.HOST	United Kingdom	https://36164a9204867f363b3980acd4b5c030.ip.looking.house/100.mb	371ms
+PASS	262144	AS917	Misaka Network, Inc.	Misaka Network Inc	USA	https://9df84ae3a5fcfe82b7128eca46f62691.ip.looking.house/100.mb	900ms
+PASS	262144	AS216475	NKtelecom INC	NKTelecom	Germany	https://7deb0038842985b0f29e63426b1ad91f.ip.looking.house/100.mb	277ms
+PASS	262144	AS197706	Keminet SHPK	Navicosoft	Albania	https://99c8a9e6c75894d6f57a0c46db7ecf22.ip.looking.house/100.mb	410ms
+PASS	262144	AS216475	NKtelecom INC	NKTelecom	Netherlands	https://ea928da645bf5d136acdddb3a6eaaa67.ip.looking.house/100.mb	291ms
+PASS	262144	AS39798	MivoCloud SRL	MivoCloud	USA	https://7b01d05ccb29ea1a453021371c5ea7ce.ip.looking.house/100.mb	1421ms
+PASS	262144	AS29802	HIVELOCITY, Inc.	MonoVM	USA	https://d419be0dfc245f5224e3e91e6850adb9.ip.looking.house/100.mb	1178ms
+PASS	262144	AS62563	GLOBALTELEHOST Corp.	Navicosoft	Canada	https://9384c0db88fe98cdef232eabaa5b438c.ip.looking.house/100.mb	1233ms
+PASS	262144	AS208226	Ouiheberg SARL	OuiHeberg	Netherlands	https://20f3ed0af6ef0ac964669edc4afbbf45.ip.looking.house/100.mb	255ms
+PASS	262144	AS48693	Rices Privately owned enterprise	NTUP	Ukraine	https://d7ffa3885910f2d7efd371a7451bf31c.ip.looking.house/100.mb	509ms
+PASS	262144	AS216475	NKtelecom INC	NKTelecom	USA	https://2e6abc40d5d6b9c6e4fab4903df82220.ip.looking.house/100.mb	913ms
+PASS	262144	AS14061	DigitalOcean, LLC	LOOKING HOUSE	Australia	https://d4c94a7d5493e908823087f31e691240.ip.looking.house/100.mb	2663ms
+PASS	262144	AS9028	OHOST GROUP LLC	OHOST.BG	Bulgaria	https://80ebf62e76b910809539a5f865a2dffe.ip.looking.house/100.mb	476ms
+PASS	262144	AS24940	Hetzner Online GmbH	Packetra	Finland	https://8b7ed0be07b69a39f22e34e45870578d.ip.looking.house/100.mb	94ms
+PASS	262144	AS208226	Ouiheberg SARL	OuiHeberg	France	https://5874762ef97732c2c3ecde235633c074.ip.looking.house/100.mb	374ms
+PASS	262144	AS208226	Ouiheberg SARL	OuiHeberg	Germany	https://5a6463a6e2fe1a207fc799d58f006367.ip.looking.house/100.mb	302ms
+PASS	262144	AS51852	Private Layer INC	Packetra	Switzerland	https://118eeddb828e57ddd044f2f91a7628dc.ip.looking.house/100.mb	298ms
+PASS	262144	AS133398	Tele Asia Limited	MLNL.HOST	Hong Kong	https://325eaf4461c1f0d10403412681b7f511.ip.looking.house/100.mb	2127ms
+PASS	262144	AS200758	Datagear LLP	ProfitServer.net	Germany	https://1589b0058236575e84af5f4a93f76d82.ip.looking.house/100.mb	251ms
+PASS	262144	AS61046	HZ Hosting Ltd	HostZealot	United Kingdom	https://e57486b710bab65fa8c85e84361f4665.ip.looking.house/100.mb	7243ms
+PASS	262144	AS200758	Datagear LLP	ProfitServer.net	Netherlands	https://230578a10a8a6628260ef04969775093.ip.looking.house/100.mb	281ms
+PASS	262144	AS50979	ROUTE 95 LLC	ProfitServer.net	Latvia	https://b9cbe1f77d346d26c628edc25decddea.ip.looking.house/100.mb	45ms
+PASS	262144	AS208226	Ouiheberg SARL	OuiHeberg	USA	https://c3a6b661c44c0c545ef08f30ff738047.ip.looking.house/100.mb	955ms
+PASS	262144	AS59711	HZ Hosting Ltd	ProfitServer.net	Netherlands	https://b6390a657442ee2cb36527cc9f34196e.ip.looking.house/100.mb	587ms
+PASS	262144	AS21100	ROUTE 95 LLC	ProfitServer.net	Netherlands	https://f58ed028f6ad49a237b880737e722c29.ip.looking.house/100.mb	268ms
+PASS	262144	AS213848	Navicosoft Pty Ltd	Navicosoft	Australia	https://e966bdbfc4fb82ce76bcc0961a28e8a1.ip.looking.house/100.mb	2356ms
+PASS	262144	AS213848	Navicosoft Pty Ltd	Navicosoft	United Kingdom	https://6395034063ff1ea9d01a28e31fb0e997.ip.looking.house/100.mb	2350ms
+PASS	262144	AS398395	PureVoltage Hosting Inc.	PloxHost	USA	https://c589cda05c1a3a94882040935a3cc8e5.ip.looking.house/100.mb	1060ms
+PASS	262144	AS59729	ROUTE 95 LLC	ProfitServer.net	Bulgaria	https://f899f037f4489d9284289b943d2fe9a5.ip.looking.house/100.mb	293ms
+PASS	262144	AS200758	Datagear LLP	ProfitServer.net	Poland	https://cc2783a7f4568e3dfcb718a7a98fac8e.ip.looking.house/100.mb	239ms
+PASS	262144	AS200758	Datagear LLP	ProfitServer.net	Spain	https://60de9f840258ae255c2c1084743d030b.ip.looking.house/100.mb	460ms
+PASS	262144	AS57043	HOSTKEY B.V.	ProfitServer.net	United Kingdom	https://f6b01e300e848f1b20833e33562786c1.ip.looking.house/100.mb	352ms
+PASS	262144	AS200758	Datagear LLP	ProfitServer.net	Singapore	https://04b1329002c5cbec1aef4264f3db89af.ip.looking.house/100.mb	1415ms
+PASS	262144	AS8254	GREEN FLOID LLC	ProfitServer.net	Greece	https://2dca900c04ae92440bcddf76fbab7edb.ip.looking.house/100.mb	712ms
+PASS	262144	AS200758	Datagear LLP	ProfitServer.net	USA	https://3d76e13157e5721bbeb78688b9cc55d9.ip.looking.house/100.mb	1195ms
+PASS	262144	AS204957	ROUTE 95 LLC	ProfitServer.net	USA	https://a0a41653e6301b462ad1b048b5025616.ip.looking.house/100.mb	842ms
+PASS	262144	AS204957	ROUTE 95 LLC	ProfitServer.net	Czech Republic	https://727029a73e0a5f1250a28a7467b71b05.ip.looking.house/100.mb	212ms
+PASS	262144	AS204957	ROUTE 95 LLC	ProfitServer.net	Switzerland	https://f06efca4592e9f82350707e6d5cdd1eb.ip.looking.house/100.mb	412ms
+PASS	262144	AS8254	GREEN FLOID LLC	ProfitServer.net	Spain	https://13678ec57c2e186400c94525112c7c02.ip.looking.house/100.mb	342ms
+PASS	262144	AS50867	HOSTKEY B.V.	ProfitServer.net	Russia	https://9c70615b18a5f2aff2010849b50aba79.ip.looking.house/100.mb	157ms
+PASS	262144	AS200758	Datagear LLP	ProfitServer.net	Hong Kong	https://e1e6986812c4217d2a4ba3e8469d827d.ip.looking.house/100.mb	1462ms
+PASS	262144	AS36007	Kamatera, Inc.	PerLod	Japan	https://f873e84654cf165f10f189ac56fa764a.ip.looking.house/100.mb	1905ms
+PASS	262144	AS204957	ROUTE 95 LLC	ProfitServer.net	Poland	https://f62b70cd7ab5b6adfa46b2454e2eca48.ip.looking.house/100.mb	143ms
+PASS	262144	AS21100	ROUTE 95 LLC	ProfitServer.net	Germany	https://8e05193e99ae83599ad3e2d0ebec5a59.ip.looking.house/100.mb	287ms
+ZERO	0	AS50113	FIRST SERVER LIMITED	ISPLevel	Russia	https://a48a82228cef41831ab9cfb93b24ab6b.ip.looking.house/100.mb	8026ms
+PASS	262144	AS21100	ROUTE 95 LLC	ProfitServer.net	Italy	https://b2f9088f7c7f713fbcee4b461cbc69f7.ip.looking.house/100.mb	379ms
+PASS	262144	AS204957	ROUTE 95 LLC	ProfitServer.net	Romania	https://6edb4217191eae44fbdb570308403c6c.ip.looking.house/100.mb	419ms
+PASS	262144	AS204957	ROUTE 95 LLC	ProfitServer.net	USA	https://48fe207c0f9a9ff9058c7251f10123aa.ip.looking.house/100.mb	1247ms
+PASS	262144	AS48716	PS Internet Company LLP	PS	Kazakhstan	https://130df0e6099037d9e502aca293edba41.ip.looking.house/100.mb	613ms
+PASS	262144	AS8254	GREEN FLOID LLC	ProfitServer.net	USA	https://3fa2eaad7ee6dcc688f445ae3b693221.ip.looking.house/100.mb	1120ms
+PASS	262144	AS204957	ROUTE 95 LLC	ProfitServer.net	USA	https://9de2f84e653cbed29574574e6f22a70c.ip.looking.house/100.mb	962ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	Netherlands	https://75b5fa76d9a92d76d40bdd2cf4bc310a.ip.looking.house/100.mb	798ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	USA	https://74e58fd2b3222c1297016c102ad0936d.ip.looking.house/100.mb	1426ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	South Africa	https://3e0444c7ba38cc0d2c5bed8da2d3ce14.ip.looking.house/100.mb	1636ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	United Kingdom	https://059d7629df517b5940837d2e3807b3cd.ip.looking.house/100.mb	365ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	India	https://2ff781f3f47c8895a2d2a64f1cd8c8b8.ip.looking.house/100.mb	1179ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	South Korea	https://4bf51ff067e806c72e3ea620c10e3336.ip.looking.house/100.mb	1992ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	Spain	https://ad814cc6744eb2902b249f9738d88fd4.ip.looking.house/100.mb	454ms
+ZERO	0	AS398395	PureVoltage Hosting Inc.	Kuroit	USA	https://1520e7cef26e6183a88a6b75655342ec.ip.looking.house/100.mb	8053ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	Australia	https://0ac3fcaf88a02c8bc348b47db6a36c8d.ip.looking.house/100.mb	2414ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	USA	https://a0f0a37e026e2a389cb7492e9d9dded3.ip.looking.house/100.mb	2396ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	USA	https://338d280d32313fb87af25b7c49c730b7.ip.looking.house/100.mb	2673ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://c3d81f1bdfc241edd22f7c5f0a7c5112.ip.looking.house/100.mb	907ms
+ZERO	0	AS57494	Adman LLC	Legionbox	Russia	https://107cd0a7dd9c7240e48b4540e9ff9c16.ip.looking.house/100.mb	8018ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://fc40e7c5803f673b3923cfc00de2324c.ip.looking.house/100.mb	811ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	USA	https://cf3658f97c7dd49d9f0b67655a164d36.ip.looking.house/100.mb	1181ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://bbcaaef5b87f2b02235b9169f1056c19.ip.looking.house/100.mb	1034ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://d25e1b0668db2888a3b8f6aa16b25316.ip.looking.house/100.mb	834ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	Brazil	https://32f9b0bccda0d51f25ea48ae3694773f.ip.looking.house/100.mb	1881ms
+PASS	262144	AS58404	PT Qwords Company International	Qwords	Indonesia	https://cf14c03fd4b4a1f74b9a6a6b5dd1e850.ip.looking.house/100.mb	1509ms
+PASS	262144	AS40676	Psychz Networks	Psychz Networks	Japan	https://e955c482ea03baf12afd64c909f30c2e.ip.looking.house/100.mb	2233ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://4743f8119684def518cccaf2e4bf4088.ip.looking.house/100.mb	1205ms
+ZERO	0	AS39798	MivoCloud SRL	MivoCloud	Russia	https://de97d6e21497acf2329d593557a145b7.ip.looking.house/100.mb	8032ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://a5be33f70cdec276c01bab3bed0e5793.ip.looking.house/100.mb	972ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://c3a1bcf8a467e2ba2e9dab60dcda2d16.ip.looking.house/100.mb	959ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://572eab44574c06119c0bffebd4aa3dbe.ip.looking.house/100.mb	1038ms
+PASS	262144	AS32002	RackGenius	RackGenius	USA	https://c10e16676763a7937e8633fccba53022.ip.looking.house/100.mb	878ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://484a0e2762d80581322ca9a4a4b53754.ip.looking.house/100.mb	1231ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://6b9659adee7cf7713d5b3e06ab473c84.ip.looking.house/100.mb	1070ms
+PASS	262144	AS18854	RadWeb, LLC	Rad Web Hosting	France	https://7f9ebfbea8aa92acfba136453a78d852.ip.looking.house/100.mb	351ms
+PASS	262144	AS399486	12651980 CANADA INC.	RDP.monster	France	https://12e38a24571fc098aa766c89ba1910ed.ip.looking.house/100.mb	287ms
+PASS	262144	AS63023	GTHost	Qyrax	USA	https://b060a86055ad6ca04f966ef8e5aa75c0.ip.looking.house/100.mb	1223ms
+PASS	262144	AS214961	Stellar Group SAS	RDP.monster	France	https://6987f6a83ddff049d0e3ef17a9adf68b.ip.looking.house/100.mb	336ms
+ZERO	0	AS24851	Netcetera Ltd.	Netcetera	United Kingdom	https://4328497c1e928fc72831fb517cd535d3.ip.looking.house/100.mb	8022ms
+PASS	262144	AS3223	Voxility LLP	Sayob	Germany	https://97823467d78cade9c75b961260003161.ip.looking.house/100.mb	232ms
+PASS	262144	AS16276	OVH SAS	SadeemRDP	United Kingdom	https://3274a4a3a29a59827e2443c7be1bd868.ip.looking.house/100.mb	372ms
+PASS	262144	AS205220	RHC Hosting	RHC Hosting	United Kingdom	https://13ad0d6c7b3c341964e341dec0885f36.ip.looking.house/100.mb	506ms
+PASS	262144	AS18854	RadWeb, LLC	Rad Web Hosting	USA	https://f019876dfbe46ff4c6932e8963530926.ip.looking.house/100.mb	956ms
+PASS	262144	AS399486	12651980 CANADA INC.	RDP.monster	USA	https://0df78b047f36c76bde4af4f3c2c6c29d.ip.looking.house/100.mb	769ms
+PASS	262144	AS60458	XNET CORE SL	Sered	Spain	https://5f81088a0d017fdb4fe358c69ec352be.ip.looking.house/100.mb	487ms
+PASS	262144	AS56322	ServerAstra Kft.	ServerAstra	Hungary	https://31c36da9283c57e0b588bf081f5963ab.ip.looking.house/100.mb	383ms
+PASS	262144	AS328723	Telasera Technologies PTY LTD	Rackzar	South Africa	https://acb531677fe2b676591dfaa858ff4447.ip.looking.house/100.mb	1585ms
+PASS	262144	AS16276	OVH SAS	SadeemRDP	USA	https://ab0d4ed7225f98d0088916054024251a.ip.looking.house/100.mb	891ms
+PASS	262144	AS216093	Root Localhost LLC	SERVERio	Germany	https://aad67b258927c9bc72edd5d5cc4cc0bd.ip.looking.house/100.mb	324ms
+PASS	262144	AS46475	Limestone Networks, Inc.	Rad Web Hosting	USA	https://9097261b73c08388d22f406c4bebd3c4.ip.looking.house/100.mb	1206ms
+PASS	262144	AS36352	HostPapa	SadeemRDP	USA	https://ebed78dfcaf430c1cb651b9111859641.ip.looking.house/100.mb	932ms
+PASS	262144	AS216093	Root Localhost LLC	SERVERio	Slovakia	https://757c1ae040dd3d06ff7fb8b737b5bd94.ip.looking.house/100.mb	248ms
+PASS	262144	AS216093	Root Localhost LLC	SERVERio	Czech Republic	https://eb6207910c5959ff29f36dda450141b7.ip.looking.house/100.mb	384ms
+PASS	262144	AS56322	ServerAstra Kft.	ServerAstra	USA	https://cc2d086dd430bacf850e56b6e2270c1f.ip.looking.house/100.mb	869ms
+PASS	262144	AS216093	Root Localhost LLC	SERVERio	USA	https://0e9e387e98532c0947386caeeb81f0e3.ip.looking.house/100.mb	890ms
+PASS	262144	AS18854	RadWeb, LLC	Rad Web Hosting	Japan	https://0a4938cd9f6deb16a86383ae915e748c.ip.looking.house/100.mb	1895ms
+PASS	262144	AS218608	SAHINNETWORK INTERNET BILISIM HIZMETLERI LIMITED SIRKETI	Server Wala	Turkey	https://7e2c61614bb74524f98748e0edf8fe69.ip.looking.house/100.mb	565ms
+PASS	262144	AS50867	HOSTKEY B.V.	Server Wala	Russia	https://2723705371d7a56a11a9015045fe51eb.ip.looking.house/100.mb	132ms
+PASS	262144	AS214965	ServerWala InfraNet FZ-LLC	Server Wala	UAE	https://02a1f8340cf0c0fc833591266a566fac.ip.looking.house/100.mb	1130ms
+PASS	262144	AS149573	Serverwala Cloud Datacenters Private Limited	Server Wala	India	https://9dc7a0efcec7a3e0ccf7f01698d3de7d.ip.looking.house/100.mb	1241ms
+PASS	262144	AS9009	M247 Europe SRL	servinga Cloud	Romania	https://042ef8b705036f84057ca2df6a44fdc0.ip.looking.house/100.mb	446ms
+PASS	262144	AS58329	servinga GmbH	servinga Cloud	Netherlands	https://96cb5be1d0aac08e3aa5c434a767b984.ip.looking.house/100.mb	265ms
+PASS	262144	AS36352	HostPapa	Server Wala	USA	https://0cfaeeb05a53a891bab23f2bf537ef13.ip.looking.house/100.mb	976ms
+PASS	262144	AS42708	Glesys AB	servinga Cloud	Sweden	https://4234723214038c9c91b6eaaa802da69d.ip.looking.house/100.mb	97ms
+PASS	262144	AS149573	Serverwala Cloud Datacenters Private Limited	Server Wala	India	https://615d5f9e3777a52f942bb5e037ca1d0e.ip.looking.house/100.mb	1209ms
+PASS	262144	AS207408	servinga GmbH	servinga Cloud	Estonia	https://7287bb80c084da38ca44ebc95e62d243.ip.looking.house/100.mb	130ms
+PASS	262144	AS329206	Rackzar  (Pty) Ltd	Server Wala	South Africa	https://1582024652ebd33ddd0a6afb82ca691e.ip.looking.house/100.mb	1671ms
+PASS	262144	AS212228	servinga GmbH	servinga Cloud	United Kingdom	https://3dbefc9ee3a106d9697895fd665e33e5.ip.looking.house/100.mb	367ms
+PASS	262144	AS149573	Serverwala Cloud Datacenters Private Limited	Server Wala	India	https://8758ca710d8ea3012aed2ab92960270e.ip.looking.house/100.mb	1635ms
+PASS	262144	AS140641	YOTTA NETWORK SERVICES PRIVATE LIMITED	Server Wala	India	https://84465527317f63b5091275ff58ddc7f4.ip.looking.house/100.mb	1613ms
+PASS	262144	AS39378	servinga GmbH	servinga Cloud	Germany	https://c874a6d1cc29f64b9d9c03699bf85836.ip.looking.house/100.mb	268ms
+PASS	262144	AS51395	Datasource AG	servinga Cloud	Switzerland	https://02d54377245b0fbfd105ed14e91453ed.ip.looking.house/100.mb	370ms
+PASS	262144	AS22439	Perfect International, Inc	Server Wala	USA	https://06cda2b8206bf77d9f42703b3c0da41b.ip.looking.house/100.mb	1365ms
+PASS	262144	AS200220	servinga GmbH	servinga Cloud	Spain	https://f507b0f69f7a282c2253b806f1364e43.ip.looking.house/100.mb	474ms
+PASS	262144	AS56150	Viet Solutions Services Trading Company Limited	Server Wala	Vietnam	https://0efaa71617e1c9f695fc2b9f54fa4dbe.ip.looking.house/100.mb	2105ms
+PASS	262144	AS268581	QNAX LTDA	Server Wala	Brazil	https://dcc02737b3eb30329c20dd1499105f1f.ip.looking.house/100.mb	2050ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	Poland	https://c372019facb121e367ec029b22c9188f.ip.looking.house/100.mb	236ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	Romania	https://9ccf7ccfc352adf5ae1410e743efc2da.ip.looking.house/100.mb	345ms
+ZERO	0	AS44493	Chelyabinsk-Signal LLC	ProfitServer.net	Russia	https://9a9a23bba841660069c820dd75c3f1c6.ip.looking.house/100.mb	8026ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	Germany	https://642d24371c7b3f481e386ad5b68806ad.ip.looking.house/100.mb	209ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	USA	https://8c7ae6ddd3af83f05063c0b25ff579c5.ip.looking.house/100.mb	823ms
+ZERO	0	AS40676	Psychz Networks	Psychz Networks	Taiwan	https://bc738c13c73b7509ca3a6a2e2fc7fef1.ip.looking.house/100.mb	8024ms
+PASS	262144	AS219399	servinga GmbH	servinga Cloud	USA	https://b0b4a6a136f238a4b2a9b27d23a22913.ip.looking.house/100.mb	1081ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	USA	https://49ed5af32cddaedc447fb644e3a534e7.ip.looking.house/100.mb	1050ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	USA	https://d458359bee1ab3782d5c7734e6b834ce.ip.looking.house/100.mb	1124ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	USA	https://135174cc1bfb44e5b8acdacf54a6f190.ip.looking.house/100.mb	1163ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	United Kingdom	https://bc54e5f2568242b254bfb2307cb3121c.ip.looking.house/100.mb	349ms
+ZERO	0	AS40676	Psychz Networks	Psychz Networks	Russia	https://faf3dbf165d9e2036ecfc17003becbcd.ip.looking.house/100.mb	8031ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	Singapore	https://c97d92776167b791e2053942feef4f42.ip.looking.house/100.mb	1726ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	USA	https://6e5687a435af7a728198f8ad01bfac20.ip.looking.house/100.mb	1231ms
+PASS	262144	AS215467	Skhron	Skhron	Sweden	https://ccc277331bd3bedaf163506927b9df77.ip.looking.house/100.mb	85ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	USA	https://ed61d20264cc3daa83e2614676aac615.ip.looking.house/100.mb	1385ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	USA	https://52179b6c71e3c1362722bee600717514.ip.looking.house/100.mb	1219ms
+PASS	262144	AS214354	SiteHUB Agency Ltd	SiteHUB	Nigeria	https://040b6531037901f1d8e6c0aa2e64cebf.ip.looking.house/100.mb	1106ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	South Africa	https://541b0236e3f2937ffeb3f31ba087efa3.ip.looking.house/100.mb	1435ms
+PASS	262144	AS149042	Silicon Cloud Global (US)	SICloud	USA	https://387ed5dc8e1fdb9873811c27f415914e.ip.looking.house/100.mb	1417ms
+PASS	262144	AS214354	SiteHUB Agency Ltd	SiteHUB	USA	https://70eb1d4ffa8e127dcb57936cbe407056.ip.looking.house/100.mb	1350ms
+PASS	262144	AS395092	Shock Hosting LLC	Shock Hosting	Australia	https://6ccee10b7cacbe738c50c3349c7c3860.ip.looking.house/100.mb	2220ms
+PASS	262144	AS198037	SPACECORE SOLUTION LTD	SpaceCore	Germany	https://663b1658007e4cc6c413b29ca41dbfd4.ip.looking.house/100.mb	231ms
+PASS	262144	AS42831	UK Dedicated Servers Limited	SolaDrive	United Kingdom	https://7bb84bb197bbdb2b1fa1324bc16b92fb.ip.looking.house/100.mb	316ms
+PASS	262144	AS198037	SPACECORE SOLUTION LTD	SpaceCore	Netherlands	https://a9f417a028b9bdde23694ba54fb64194.ip.looking.house/100.mb	266ms
+PASS	262144	AS36352	HostPapa	SolaDrive	USA	https://96bd2ba350a048f8580ab5e3b106716c.ip.looking.house/100.mb	956ms
+PASS	262144	AS198037	SPACECORE SOLUTION LTD	SpaceCore	Germany	https://fa1529816095e44a3becb36f6c7dee00.ip.looking.house/100.mb	274ms
+PASS	262144	AS42237	Anastasiia Hein	Sweden Dedicated	Sweden	https://5b7abfe7ca48b8c06b60ee85e92b2fb7.ip.looking.house/100.mb	276ms
+PASS	262144	AS397873	Ryan C. Barker, Sole Proprietorship	SolaDrive	USA	https://b21bd2bfa0ebc45fed6e313bb5ed443f.ip.looking.house/100.mb	1265ms
+PASS	262144	AS212531	Interneto vizija	Time4VPS	Lithuania	https://f49ce4bd0b0148184d058c6808f86f4e.ip.looking.house/100.mb	73ms
+PASS	262144	AS56485	TheHost LLC	TheHost	Ukraine	https://ad3d3f41d9d2a27f2d6cb260dba9c18a.ip.looking.house/100.mb	260ms
+PASS	262144	AS38001	NewMedia Express Pte Ltd	SolaDrive	Singapore	https://57287d1b5186b18d8aa79cc7b061c27d.ip.looking.house/100.mb	1390ms
+PASS	262144	AS27323	Wowrack.com	SmartHost LLC	USA	https://14a6a6b03786320f14dcbb89797d8567.ip.looking.house/100.mb	1430ms
+PASS	262144	AS21743	Atlas Networks Corporation	SolaDrive	USA	https://a7c73ee94ab7705b85f7c38726f9b223.ip.looking.house/100.mb	1244ms
+PASS	262144	AS16276	OVH SAS	ThomasHost	France	https://2e790dad314c9cd65c4f6e3ff813d676.ip.looking.house/100.mb	326ms
+PASS	262144	AS60144	3W Infra B.V.	ua-hosting.company	Netherlands	https://bfee145ded11568ba1af551be90fd3ff.ip.looking.house/100.mb	304ms
+PASS	262144	AS149042	Silicon Cloud Global (US)	SICloud	Japan	https://c31ed3dde0cef2e0cc170c4b8f4b876b.ip.looking.house/100.mb	2326ms
+PASS	262144	AS215362	zeroms.net	Torchbyte	Romania	https://4e17502ff49afa8c3c3fe2d31f0e5742.ip.looking.house/100.mb	400ms
+PASS	262144	AS42532	SIA VEESP	Veesp	Latvia	https://a467972d6ca523b7b84c6f5e90e7c564.ip.looking.house/100.mb	60ms
+PASS	262144	AS207604	United Internet Ltd.	Unlimited.RS	Serbia	https://82891ae929efe44c5a6c7f6b3254afd2.ip.looking.house/100.mb	341ms
+PASS	262144	AS20860	IOMART CLOUD SERVICES LIMITED	UAPEER H.S.	United Kingdom	https://d7f502dd226820cd13aee7948af735b9.ip.looking.house/100.mb	405ms
+PASS	262144	AS213929	UP-NETWORK Sarl	UP-NETWORK	Switzerland	https://b6aeef23528c9043804ad5ccbcb97568.ip.looking.house/100.mb	370ms
+PASS	262144	AS43317	SIA VEESP	Veesp	Russia	https://54fc5bed59fc39211fa780805f437247.ip.looking.house/100.mb	160ms
+PASS	262144	AS42532	SIA VEESP	Veesp	Netherlands	https://bc6934cd85712f88ed130b6d86f20bbc.ip.looking.house/100.mb	266ms
+PASS	262144	AS207560	Zubritska Valeriia Nikolaevna	VIKHOST	Ukraine	https://519167cc9f760e8258cf41bf9fc104b6.ip.looking.house/100.mb	223ms
+PASS	262144	AS47447	23M GmbH	Virtarix	Germany	https://3112921316d1bc8d55aa4edfbf594484.ip.looking.house/100.mb	244ms
+PASS	262144	AS216044	Terranode LLC	TerraNode	USA	https://3c2a7e4f79217f79273439fce8a6e554.ip.looking.house/100.mb	1087ms
+PASS	262144	AS16276	OVH SAS	ThomasHost	Canada	https://3dda6f5f7f59d51d43bb0eda8f6ab787.ip.looking.house/100.mb	987ms
+PASS	262144	AS59729	ROUTE 95 LLC	Virterion	Bulgaria	https://1cca297641fe374672749bf0f33300f7.ip.looking.house/100.mb	310ms
+PASS	262144	AS31863	Centrilogic, Inc.	ThomasHost	USA	https://614c1038550a9f43cae3063de0734d62.ip.looking.house/100.mb	1001ms
+PASS	262144	AS207728	Virterion LLC	Virterion	Netherlands	https://994c23b3399f10a03b23b250179a6f66.ip.looking.house/100.mb	277ms
+PASS	262144	AS396362	Leaseweb USA, Inc.	ua-hosting.company	USA	https://23540e329429fad35d47c2d86372ba09.ip.looking.house/100.mb	968ms
+PASS	262144	AS35661	VIRTUA SYSTEMS SAS	Virtua.Cloud	France	https://74c2452f00fe91989e4f1aec99b8f17d.ip.looking.house/100.mb	381ms
+PASS	262144	AS35661	VIRTUA SYSTEMS SAS	Virtua.Cloud	Germany	https://7a7e0b56b897cc470e2b49a6f8f55b74.ip.looking.house/100.mb	299ms
+PASS	262144	AS35661	VIRTUA SYSTEMS SAS	Virtua.Cloud	France	https://3cdf0c8e6db6a367a3a6dac06f3ecab8.ip.looking.house/100.mb	379ms
+PASS	262144	AS205007	Maxim Azarov trading as eServer	VPS1	Serbia	https://22c64f87abe1f9d16d3e5047a34c6ccd.ip.looking.house/100.mb	274ms
+PASS	262144	AS214798	Digital City FZE	VPS1	Netherlands	https://14fe676825d4c8502b0983e87160b695.ip.looking.house/100.mb	261ms
+PASS	262144	AS35661	VIRTUA SYSTEMS SAS	Virtua.Cloud	Netherlands	https://999a39b7058a193f793246c64ad1fa03.ip.looking.house/100.mb	349ms
+PASS	262144	AS61424	eServer s.r.o.	VPS1	Slovakia	https://82c4aebf6a77dbbec33bbff0ff6f98d8.ip.looking.house/100.mb	277ms
+PASS	262144	AS34224	Neterra Ltd.	VPSBG	Bulgaria	https://0220203984d710f3b3b9c2e1dc11cbbf.ip.looking.house/100.mb	280ms
+PASS	262144	AS44803	Webdock.io ApS	Webdock	Denmark	https://2a83ae492625dc42fea29d2e0fb3f84c.ip.looking.house/100.mb	263ms
+PASS	262144	AS34907	IP SERVICES Sp. zo.o.	VPSHive	Poland	https://b9a3f2cadd3d19e30bfbda5326dfa107.ip.looking.house/100.mb	393ms
+PASS	262144	AS41075	ATW Internet Kft.	XetHost	Hungary	https://2a48c26218d9b663182f471b1e5c2b67.ip.looking.house/100.mb	191ms
+PASS	262144	AS48693	Rices Privately owned enterprise	VPSHive	Ukraine	https://b0767be332336976c3cf0538898038bd.ip.looking.house/100.mb	512ms
+PASS	262144	AS48031	Ivanov Vitaliy Sergeevich	XServer	Ukraine	https://b952876dc7acdd2ea35da2e99df05e1e.ip.looking.house/100.mb	169ms
+PASS	262144	AS29802	HIVELOCITY, Inc.	Virtarix	USA	https://f22bbcb848f3aabade17b5a9838574c9.ip.looking.house/100.mb	1228ms
+PASS	262144	AS202656	Ivanov Vitaliy Sergeevich	XServer	Germany	https://e74edb888006d698b9dab5a0db5dd864.ip.looking.house/100.mb	235ms
+PASS	262144	AS48031	Ivanov Vitaliy Sergeevich	XServer	Poland	https://bed6c5dd97692724c27f88bb0c722494.ip.looking.house/100.mb	143ms
+PASS	262144	AS48031	Ivanov Vitaliy Sergeevich	XServer	Bulgaria	https://86c076c530eb03c04ef8a981ac8ec713.ip.looking.house/100.mb	401ms
+PASS	262144	AS202656	Ivanov Vitaliy Sergeevich	XServer	Netherlands	https://d41b4f1ffeb9af569c7db59cc5537acc.ip.looking.house/100.mb	396ms
+PASS	262144	AS142348	Universitas Pakuan	Universitas Pakuan	Indonesia	https://c35d2beca371907e427cd9e150ea82f1.ip.looking.house/100.mb	1905ms
+PASS	262144	AS52173	Sia Nano IT	YourServer	Sweden	https://eb532ddde4bb2d48f4fa788676769282.ip.looking.house/100.mb	116ms
+PASS	262144	AS43513	Sia Nano IT	YourServer	Latvia	https://009e850a547e8df15912835bac0f8653.ip.looking.house/100.mb	71ms
+PASS	262144	AS328364	Host Africa (Pty) Ltd	Virtarix	South Africa	https://59a1e1445822d68f8d11eda78d66d19d.ip.looking.house/100.mb	1633ms
+PASS	262144	AS197959	VIRTUA SYSTEMS SAS	Virtua.Cloud	USA	https://9f67be2dfc98f809045810a73db978c4.ip.looking.house/100.mb	1364ms
+PASS	262144	AS202656	Ivanov Vitaliy Sergeevich	XServer	United Kingdom	https://e000bf4c1dd4c2c8bdacf13f36db1714.ip.looking.house/100.mb	314ms
+PASS	262144	AS397270	NetInformatik Inc.	XenSpec	USA	https://7082241e6a16ab8953f719031e3ac012.ip.looking.house/100.mb	986ms
+PASS	262144	AS210895	Podaon SIA	Zomro	Poland	https://c74f218b17ceac14770532a44cba3fc7.ip.looking.house/100.mb	279ms
+PASS	262144	AS211381	Podaon SIA	Zomro	Netherlands	https://7e729ddceac91fc2b1b3b42e93b4e403.ip.looking.house/100.mb	359ms
+PASS	262144	AS204601	NovoServe B.V.	Zomro	Netherlands	https://5e4ddee5588b376a799b2e86753ba08e.ip.looking.house/100.mb	302ms
+PASS	262144	AS397270	NetInformatik Inc.	XenSpec	USA	https://ebd98f6c61a23c64911353921d7bab9e.ip.looking.house/100.mb	1218ms
+ZERO	0	AS60404	Liteserver	Securebit	Switzerland	https://7da7e2aa740e8bf0e08854891e5c4ac1.ip.looking.house/100.mb	8026ms
+PASS	262144	AS204957	ROUTE 95 LLC	XServer	USA	https://34adc9ed33a47d4e18897b8f0832acbe.ip.looking.house/100.mb	1125ms
+PASS	262144	AS215370	Thomas Sebastiaan Viet trading as Wasabi Hosting	Wasabi Hosting	Netherlands	https://a049f37f04806b82738ca6955f3712b7.ip.looking.house/100.mb	1928ms
+PASS	262144	AS61138	Zappie Host	Zappie Host	Chile	https://40e88753859c481c7256493c261ea70b.ip.looking.house/100.mb	1619ms
+PASS	262144	AS61138	Zappie Host	Zappie Host	South Africa	https://1c65c39f00b1a838097b0b04a2eafd71.ip.looking.house/100.mb	1982ms
+PASS	262144	AS61138	Zappie Host	Zappie Host	New Zealand	https://30e62620541e47941f832c8b4007808a.ip.looking.house/100.mb	2370ms
+ZERO	0	AS395092	Shock Hosting LLC	Shock Hosting	France	https://b5e6e891429670d125469f540ba3836e.ip.looking.house/100.mb	8020ms
+ZERO	0	AS395092	Shock Hosting LLC	Shock Hosting	Netherlands	https://5b30b7803d66416a4a4526af8f9b9ea3.ip.looking.house/100.mb	8019ms
+ZERO	0	AS395092	Shock Hosting LLC	Shock Hosting	Japan	https://464767c0ea753bc44922c21b8ae54f81.ip.looking.house/100.mb	8018ms
+FROZEN	245475	AS135660	ROUTE 1 DIGITAL (PVT.) LIMITED	Navicosoft	Pakistan	https://a9db0a92554521a9f1467bd98eb1498c.ip.looking.house/100.mb	25021ms

@@ -117,6 +117,8 @@ mobile is too small to build a reliable link on.
 
 ## How it was measured
 
+Raw anonymized runs from November 2026: [`data/2026-11`](data/2026-11).
+
 - Each point: one connection, 256 KB must arrive. Targets and our results are in
   [`targets.tsv`](targets.tsv): columns `home_ru` (wired home ISP) and `mobile_ru` (Beeline LTE),
   2026-11-05/06.
