@@ -1,175 +1,159 @@
-# I tested 435 hosting locations from inside Russia. Whole networks are frozen, and the hosting brand doesn't matter
+# Russia doesn't block sites, it freezes whole networks. I tested 435 hosting locations
 
-If your server is on Hetzner, OVH, DigitalOcean, Vultr or M247, users in Russia probably can't use
-it. They don't get an error. The page just loads forever and then times out. I measured 435 test
-points in 211 hosting networks from a wired home connection and a mobile network in Russia. 87%
-work fine. The ones that don't are frozen as whole networks, so a small host renting space in a
-frozen data center goes down with it. There is a tool at the end that checks your own server in
-30 seconds.
+My VPN server ran on Hetzner, and from Russia it behaved oddly: some connections flew, others hung
+until they timed out. I started digging and ended up testing 435 foreign hosting locations. Most
+of them work. What gets frozen is whole networks, along with everyone renting space inside them.
+Below: who exactly, how it works at the packet level, and how to check your own server in 30
+seconds.
 
-![Cover](docs/images/cover.png)
+![Is your host on the list?](docs/images/cover.png)
 
-**TL;DR**
+## How it started
 
-- Russia's DPI system (TSPU) lets about **8 packets** through on mobile and about **25 on wired**
-  per TCP connection. After that nothing arrives, in either direction, and no RST is sent.
-- 378 of 435 test points downloaded fine. The failures cluster into 14 networks frozen at every
-  point (OVH, Hetzner, DigitalOcean, M247, HostPapa, Vultr, Scaleway and others), plus 3 more with
-  a single failed point each.
-- **The network owner is what counts.** RackNerd sits in HostPapa's network and is frozen with it,
-  whatever its website says.
-- Cloudflare, which Russian ISPs throttled in summer 2025, works again on both connections.
-- UDP is not affected. WireGuard on the same frozen server keeps working.
+The server offered two ways to connect. AmneziaWG (a WireGuard fork) was fast. Reality, a TCP-based
+protocol, on the same server never connected at all: the connection opened and just hung.
 
-## How I noticed
+My first guess was that my IP had been blacklisted. I put a 2 MB file on the server and opened it
+from Russia with the VPN off. The download stalled within the first few kilobytes, every time at
+the same point. From the EU the same file arrived in a quarter of a second.
 
-I ran a small VPN server on Hetzner for a group of people. WireGuard (AmneziaWG) on it was fast,
-while Reality, a TCP-based protocol, on the same box never connected at all: the connection just
-hung until it timed out. My first thought was that my IP had been blacklisted.
+![The same file from the EU and from Russia](docs/images/download-race.gif)
 
-I put a 2 MB test file on the server and opened it from Russia with the VPN off. On mobile
-(Beeline LTE) the download stopped at 9,984 bytes over HTTP and 4,096 over HTTPS. On wired home
-internet it stopped at 33,304 and 24,576 bytes. Always at the same point. From the EU the same
-2 MB arrived in 0.25 s, six times out of six. Then Hetzner's own speed-test files in Finland and
-Germany stalled the same way, so my IP had nothing to do with it. When OVH, Vultr and Scaleway
-did too, it was clear Hetzner wasn't special either.
+Then I tried Hetzner's own speed-test files in Finland and Germany. They stalled the same way, so
+my IP had nothing to do with it. OVH, Vultr and Scaleway test files did too, so Hetzner wasn't
+special either.
 
-## The mechanics: packets, not bytes
+## Who gets frozen
 
-Since 9 June 2025 this has been described as "16 KB and then nothing"
-([Cloudflare](https://blog.cloudflare.com/russian-internet-users-are-unable-to-access-the-open-internet/),
-[heise](https://www.heise.de/en/news/The-16-Kbyte-trick-Russian-providers-block-foreign-content-again-10465087.html)).
-I wanted to know what exactly is being counted, so I captured packet headers with `tcpdump` on a
-server in a frozen network while a phone in Russia ran a few tests: one big download, many small
-chunks over separate connections, the same chunks over one connection, and a stream of tiny
-200-byte packets.
+To see the scale, I collected public test files from hosting providers, mostly from the
+looking.house catalog, and wrote a script that opens one connection to each and tries to download
+256 KB. I ran the whole list from the EU first to drop dead points. 435 points at 154 companies
+remained.
 
-The tiny packets settled it. On wired home internet they stopped after 4.8 KB, while full-size
-packets stopped after 33 KB. That is seven times fewer bytes, but about the same number of packets,
-roughly 25. On mobile (Beeline and MTS) the limit is about 8 packets.
+Then the same list from Russia. On wired home internet 87% of the points downloaded. The rest
+stalled at almost the same size, about 16 KB, across different companies and continents. Mobile
+Beeline showed the same picture, and on a smaller sample so did MTS. The operator doesn't matter:
+it's one rule for the whole country.
 
-![Packets before the freeze](docs/images/packets.png)
+![378 of 435 points downloaded](docs/images/waffle.png)
 
-| | Beeline LTE | MTS | Wired home |
-|---|---|---|---|
-| Packet size (MSS) | 1,260 B | 1,400 B | 1,460 B |
-| Data packets before freeze | 8 | 8 | 25 |
-| 30 chunks, new connection each | 30/30 | 28/30 | 30/30 |
-
-- **The counter is packets, not bytes.** The well-known "16 KB" is just 25 full-size packets.
-- **It is per connection.** Thirty short connections of 3 KB each all went through; over a single
-  connection only the first two chunks did.
-- **It freezes both ways and silently.** Over one connection, the phone's third request never
-  reached the server. When the phone uploaded 1 MB over wired home internet, the server received
-  zero bytes of the body. There is no RST, so applications wait for a timeout instead of failing
-  fast.
-- **On mobile, TLS doesn't even finish.** Eight packets are not enough for a handshake with a
-  certificate chain, so HTTPS gets zero bytes of content. That's why my Reality never connected.
-
-## The wide scan: 435 points, 211 networks
-
-I collected public test files from hosting providers, mostly from the looking.house catalog, and
-wrote a script that opens one connection per point and expects 256 KB. The whole list ran from the
-EU first as a control; points that failed there were dropped. That left 435 points at 154
-companies. I mapped each point's IP to the network owner (ASN): 211 networks.
-
-From wired home internet in Russia, 378 points downloaded. 52 stalled, nearly all at the same
-~16 KB, across different companies and continents. Random failures don't line up that neatly;
-this is one mechanism. 5 more returned nothing. Mobile Beeline matched the wired result on 415 of
-435 points; there the freeze shows up as zero bytes, because the limit hits before TLS completes.
-On 17 hand-picked points, Beeline, MTS and wired home all agreed. The operator doesn't matter; it
-is one nationwide policy.
+The stalled points cluster into 14 networks frozen at every point:
 
 ![Frozen networks](docs/images/frozen-networks.png)
 
-Three networks (GlobalTeleHost, PI Data Centers, UK Dedicated Servers) also failed, but each had
-only one point in the list, which could just as well be a dead test server, so I count them as
-uncertain.
+| Network | Frozen points | Who else sits in it |
+|---|---|---|
+| OVH (France, Canada, US) | 12 of 12 | BlueVPS, IPhoster, KarasHost, SadeemRDP, ThomasHost |
+| GTHost | 11 of 11 | Qyrax |
+| HostPapa | 7 of 7 | RackNerd, DediRock, HostNamaste, Server Wala, SolaDrive |
+| DigitalOcean | 3 of 3 | London, US, Australia |
+| M247 | 3 of 3 | 1Gbits, Hosteroid, servinga |
+| Hetzner (incl. US and Singapore) | all | Packetra |
+| Vultr, Scaleway, BuyVM, Clouvider, Glesys, iomart, TransitX | all | |
 
-Networks that passed at every point include Psychz, Shock Hosting, Free Range Cloud, HostHatch,
-FlokiNET, AltusHost, Kuroit, Virtua, SpeedyPage, Time4VPS, Serverius, LiteServer and Google Cloud,
-about 120 companies in total. I'm not recommending any of them; it is a fact as of the test date.
+Three more networks failed at their only tested point. That could be the freeze or just a dead test
+server, so I don't count them.
 
-## The network owner decides, not the brand
+Passing, for example: HostHatch, FlokiNET, Psychz, Shock Hosting, Free Range Cloud, AltusHost,
+Kuroit, Virtua, SpeedyPage, Time4VPS, Serverius, LiteServer and Google Cloud, about 120 companies in
+total. I'm not recommending any of them; it's the result as of the test date.
 
-At first some hosts looked inconsistent: BlueVPS passed at 9 of its 14 points. Grouping points by
-network owner removed the noise completely. Many small hosts rent space in other companies' data
-centers. BlueVPS in its own network passed 7 of 7; BlueVPS in OVH, Clouvider and Glesys networks
-was frozen. Five different brands sit on OVH's network, and all five are frozen. RackNerd turned
-out to be in HostPapa's network, which is frozen at all 7 points across six brands.
+## The network matters, not the hosting brand
+
+At first the results looked random. Some BlueVPS points passed and others didn't. It all made sense
+once I looked at whose network each point sits in.
+
+Many small hosts don't run their own networks. They rent racks and IP addresses from a large
+provider, and the server's address stays that provider's address: it is announced on the internet
+by the provider's autonomous system (AS). Judging by the results, that is exactly what TSPU decides
+on: whether the destination address belongs to a network on its list. The hosting brand isn't part
+of that chain.
+
+![What decides whether a connection gets frozen](docs/images/network-owner.png)
+
+The owner is easy to check: whois or ipinfo on the server's IP shows the AS number and company.
+BlueVPS in its own network passed all 7 points. The same BlueVPS inside OVH, Clouvider and Glesys
+networks is frozen. RackNerd, which many treat as a separate budget host, sits in HostPapa's network
+and is frozen with it.
 
 ![Brand vs network](docs/images/brand-vs-network.png)
 
-Location doesn't help either. Hetzner's US and Singapore networks have their own AS numbers
-(AS213230, AS212317, AS215859) and are frozen like the European ones. OVH is frozen in France,
-Canada and the US. It looks like whole companies go on the list, with all their networks.
+Location doesn't help either. Hetzner's US and Singapore networks have their own AS numbers and are
+frozen like the European ones. OVH is frozen in France, Canada and the US. It looks like whole
+companies go on the list, with all their networks.
 
-## Why these networks?
+## How the freeze works
 
-Nobody has published the list, so I don't have a direct answer. But there is an overlap that's
-hard to miss: the frozen networks are where a lot of VPN servers live. Hetzner and DigitalOcean
-are cheap, billed hourly, and
-[widely used by Russians for private VPN servers](https://ppc.land/russian-isps-throttle-cloudflare-traffic-to-16kb/).
+To find out what is counted, I put a server in a frozen network and recorded every packet in and
+out of it, while a phone in Russia ran several tests, including a stream of tiny 200-byte packets.
+
+![How the freeze works](docs/images/post-office.gif)
+
+That test gave the answer. On wired home internet the tiny packets stopped after 4.8 KB and
+full-size ones after 33 KB. Seven times fewer bytes, about 25 packets both times. On mobile Beeline
+and MTS the limit is lower, about 8 packets.
+
+![Packets before the freeze](docs/images/packets.png)
+
+What follows from it:
+
+- packets are counted, not bytes; the well-known "16 KB" is just 25 full-size packets;
+- the counter is per connection: thirty short connections all went through, while one long
+  connection carried only the first chunks;
+- it freezes both ways: after the limit, the phone's requests stop reaching the server too;
+- the connection isn't reset, it just hangs, so the client doesn't fail fast and waits for a
+  timeout;
+- on mobile, 8 packets aren't even enough to finish a TLS handshake with a certificate chain, so
+  HTTPS and Reality get nothing. That's why my Reality never connected.
+
+AmneziaWG kept working because the freeze only affects TCP. WireGuard and AmneziaWG run over UDP,
+which the freeze doesn't touch, at least for now.
+
+## Why these networks
+
+Nobody has published the list, but there is a pattern: these are networks with a lot of VPN
+servers. Hetzner and DigitalOcean are cheap, billed hourly, and
+[widely used by Russians for private VPNs](https://ppc.land/russian-isps-throttle-cloudflare-traffic-to-16kb/).
 M247 [sells servers for VPNs](https://www.m247global.com/vpn-servers) itself, and addresses in its
 network [are identified](https://www.netify.ai/resources/platforms/m247) as CyberGhost, Hotspot
-Shield and other commercial VPN endpoints. OVH, Vultr and Scaleway are in the same category.
+Shield and other commercial VPN endpoints.
 
-What argues against it: plenty of other VPN-friendly hosts pass, HostHatch or FlokiNET for
-example. So it looks less like "every host VPN people like" and more like "the biggest of them",
-where a freeze hits the most servers at once. That's a guess, and better explanations are welcome.
+But plenty of hosts popular with VPN operators pass, HostHatch and FlokiNET among them. It looks
+like the biggest ones get frozen, where one rule hits the most servers at once. That's a guess, and
+better explanations are welcome.
 
-## Why I think it's TSPU
+## Who is doing it
 
-I can't see the censor's equipment, so this is inference, but the signs line up.
+I can't see the equipment, but everything points to TSPU, the filtering system that Russia's
+"sovereign internet" law, in force since November 2019, puts at every operator; Roskomnadzor sets
+its rules. Three different operators behave identically down to the packet, which only happens when
+the rule comes from above. And it isn't an IP block: with one, the connection never opens at all.
 
-- **It's not an IP block.** A blocked IP never connects or gets reset right away. Here the
-  connection opens, the first packets pass, and only then does it go silent. That is equipment
-  watching the traffic flow and counting packets.
-- **It's not the server.** The same server serves the file instantly from the EU, and Hetzner's
-  own test servers freeze from Russia exactly like mine.
-- **It's identical at three different companies**: Beeline, MTS and a home ISP, down to the
-  packet. Operators configure their networks themselves; they only match like this when the rule
-  comes from above. That is how TSPU works: under Russia's "sovereign internet" law, in force since
-  November 2019, this equipment sits at every operator and Roskomnadzor sets its filtering rules.
-- **It matches earlier reports.** In June 2025
-  [Cloudflare described](https://blog.cloudflare.com/russian-internet-users-are-unable-to-access-the-open-internet/)
-  the same 16 KB limit, applied by Russian ISPs themselves, and named Rostelecom, MegaFon,
-  Vimpelcom (Beeline), MTS and MGTS. My measurement adds the mechanics: what is counted, and on
-  which networks.
+[Cloudflare described](https://blog.cloudflare.com/russian-internet-users-are-unable-to-access-the-open-internet/)
+the same 16 KB limit back in June 2025 and said it was applied by Russian ISPs themselves,
+naming Rostelecom, MegaFon, Vimpelcom (Beeline), MTS and MGTS.
 
-## What changed since 2025
-
-On 26 June 2025 Cloudflare wrote that since 9 June users in Russia could load only the first 16 KB
-of any asset behind Cloudflare. I tested ordinary Cloudflare-served sites and CDNs (cloudflare.com,
-cdnjs, unpkg, jsDelivr), three attempts each, from wired home internet and mobile Beeline. All 36
-attempts succeeded. The list changes, and not only by growing. Hetzner, DigitalOcean and OVH,
-which Cloudflare named as affected back then, are still frozen.
-
-## Seen only on mobile Beeline
-
-Two observations I can't explain yet. Hivelocity (US) stopped at the same 16 KB on Beeline but
-passed on wired home. All five points in Ukrainian networks failed to connect on Beeline but worked
-on wired home; that looks like a separate block of Ukrainian networks, unrelated to the hosting
-freeze. Data from other operators would help.
+Interestingly, Cloudflare itself passes now. I tested ordinary Cloudflare-served sites, including
+cloudflare.com, cdnjs, unpkg and jsDelivr, on wired and mobile: all 36 attempts went through. The
+list changes, and sometimes things get removed. Hetzner, DigitalOcean and OVH, affected at the same
+time, are still frozen.
 
 ## If your server is frozen
 
-1. **Check who owns the network** (ipinfo or whois on the IP). If it's OVH, M247, HostPapa or
-   Hetzner, the name on the hosting website doesn't matter.
-2. **Confirm by measurement:** stops from Russia, downloads from abroad.
-3. **Right now, bring up UDP.** WireGuard or AmneziaWG on the same server usually keeps working. A
-   stopgap, not a fix.
-4. **Don't bother** with a new IP from the same provider or another port. The new IP is in the same
-   frozen network; the port doesn't matter.
-5. **Move to a network that passes.** Pick it by measurement; price and reviews won't tell you.
-   Hourly billing lets you test before moving.
-6. **Keep a spare with a different network owner.** The list changes.
+1. Check who owns the network: whois or ipinfo on the IP. If it's OVH, M247, HostPapa or Hetzner,
+   the name on the hosting website no longer matters.
+2. Confirm it's the freeze: from Russia with the VPN off the download stalls, from abroad it works.
+3. If it's urgent, bring up WireGuard or AmneziaWG on the same server. It's a stopgap.
+4. Don't bother with a new IP from the same provider or another port: the new IP is in the same
+   network, and the port doesn't matter.
+5. Move to a network that passes and pick it by measurement; reviews won't tell you. With hourly
+   billing you can test a server for cents before moving.
+6. Keep a spare server in another company's network: the list changes.
 
 ## Check it yourself
 
-The script and target list are in this repository.
-It needs only `bash` and `curl` and runs on Linux, macOS and Git Bash on Windows. Nothing is
-uploaded and the results file contains no IP address. Download two files:
+The script and target list are in this repository. They need only `bash` and `curl`, run on Linux,
+macOS and Git Bash on Windows, upload nothing, and the results contain no IP address.
 
 ```bash
 mkdir freeze-check && cd freeze-check
@@ -177,21 +161,15 @@ curl -fsSLO https://raw.githubusercontent.com/MarkSinD/freeze-check/main/freeze-
 curl -fsSLO https://raw.githubusercontent.com/MarkSinD/freeze-check/main/targets.tsv
 ```
 
-The script is about 300 lines; read it before running it, like any script from the internet. Then:
+The script is short; read it before running. Then, from Russia:
 
 ```bash
 bash freeze-check.sh scan --quick --wait
 ```
 
-`--wait` lets you start it and turn the VPN off afterwards; it waits for a Russian address. For your
-own server, `owner` shows who owns its network and what we measured there, and `serve` on the
-server plus `url` from Russia measures it directly. If you don't have anyone in Russia to run it,
-the `owner` command alone tells you whether your provider's network was frozen in our test.
-
-
-**If you are in Russia,** please share your result through the
-[GitHub form](https://github.com/MarkSinD/freeze-check/issues/new?template=freeze-check-result.yml):
-operator, region, date and output, no IP. Two connections in one city are a start, not a map.
+`--wait` lets you start it and turn the VPN off afterwards; it waits for a Russian address. If you
+are outside Russia, `bash freeze-check.sh owner YOUR_SERVER_IP` tells you who owns your server's
+network and whether that network was frozen in this test.
 
 <details>
 <summary><b>Methodology in detail</b></summary>
@@ -199,41 +177,60 @@ operator, region, date and output, no IP. Two connections in one city are a star
 **Targets.** 452 public test files at 154 hosting companies: mostly looking.house points, plus 16
 of my own (providers' speed-test servers, Cloudflare, Google Cloud Storage).
 
-**Control.** The whole list ran first from a VPS in Latvia on 5 November, 12:54 UTC. Points that
-failed there were dropped as dead. 435 remained.
+**Control.** The whole list ran first from a VPS in Latvia on 5 November 2026. Points that failed
+there were dropped as dead. 435 points in 211 networks remained.
 
-**One point.** `curl` requests the first 256 KB (`Range` header) over a single connection. Limits:
-8 s to open the connection including TLS, abort after 6 s without a byte, 25 s per point (40 s in
-the public tool, so a slow mobile link isn't mistaken for a freeze). The certificate isn't checked
-(`-k`): only delivery is measured. 16 points in parallel; the list takes 2-3 minutes.
+**One point.** `curl` requests the first 256 KB over a single connection. Limits: 8 s to open the
+connection including TLS, abort after 6 s without data, 25 s per point (40 s in the public tool, so a
+slow mobile link isn't mistaken for a freeze). The certificate isn't checked: only delivery is
+measured. 16 points in parallel, 2-3 minutes for the list.
 
 **Verdict.** 256 KB or the whole file arrived: pass. Stopped between 1 byte and 64 KB: frozen. More
-than 64 KB but too slow: slow, not a freeze. Nothing: empty.
+than 64 KB but too slow: slow. Nothing: empty.
 
-**Network owner.** The ASN and its owner by each point's IP via ipinfo. A network counts as frozen
-if none of its points passed.
+**Network owner.** AS number and owner by each point's IP via ipinfo. A network counts as frozen if
+none of its points passed.
 
-**Runs from Russia.** Wired home internet over Wi-Fi: 5 November, 22:04-22:06 UTC. Beeline LTE via
-a phone hotspot: 6 November, 11:17-11:20 UTC. Before each run the script checks the address is
-Russian: I had to discard one early run because a VPN was on.
+**Runs from Russia.** Wired home internet: 5 November, 22:04 UTC; of 435 points 378 passed, 52
+stalled, 5 empty. Beeline LTE via phone hotspot: 6 November, 11:17 UTC; matched the wired result on
+415 of 435 points. MTS checked by hand on 17 points. Before each run the script checks the address is
+Russian.
 
-**Mechanics.** A temporary server in Hetzner's network with a plain HTTP page on ports 8080, 50000,
-2053 and 80; `tcpdump` recorded packet headers only. Android phone, Chrome, VPN off. Tests: one
-2 MB stream; 30 chunks of 3,000 bytes, each over a new connection; the same chunks over one
-connection; 200-byte packets every 30 ms (with `TCP_NODELAY`); a 1 MB upload; other ports.
-Networks: Beeline LTE, MTS, wired home. Phone addresses from the captures are not published.
+**First measurement.** The 2 MB file on my server: on Beeline it stopped at 9,984 bytes over HTTP and
+4,096 over HTTPS, on wired home at 33,304 and 24,576. From the EU it arrived in 0.25 s, six of six.
 
-**Raw data.** All runs, anonymized and without IP addresses:
-[data/2026-11](https://github.com/MarkSinD/freeze-check/tree/main/data/2026-11).
+**Mechanics.** A temporary server in Hetzner's network, a plain HTTP page on ports 8080, 50000, 2053
+and 80, `tcpdump` recording headers only. Android phone, Chrome, VPN off. Tests: a 2 MB stream; 30
+chunks of 3,000 bytes, each on a new connection; the same chunks on one connection; 200-byte packets
+every 30 ms; a 1 MB upload (on wired home the server got zero bytes of the body); other ports. MSS:
+Beeline 1,260 bytes, MTS 1,400, wired 1,460. No RST after the freeze on any network.
+
+**Cloudflare and CDNs.** Seven URLs, three tries each, 6 November, wired home and Beeline LTE.
+
+**Raw data.** All runs, anonymized, no IP addresses: [data/2026-11](data/2026-11).
+
+</details>
+
+<details>
+<summary><b>Oddities I can't explain</b></summary>
+
+Hivelocity (US) stalled at the same 16 KB on Beeline but passed on wired home. All five points in
+Ukrainian networks failed to connect on Beeline but worked on wired home. The second looks like a
+separate block of Ukrainian networks, unrelated to the hosting freeze. Data from other operators
+would help.
 
 </details>
 
 ## Limitations
 
-- Measured on 5-6 November 2026 from wired home internet and Beeline LTE; MTS on 17 points.
-- A provider's test files may sit in a different subnet from its VPS.
-- "Zero bytes" on mobile can't tell "connection never opened" from "froze during the handshake".
-- A network with a single failed point may just have a dead test server.
-- AWS and Azure are in the list for the next run; Oracle, Contabo and Linode had no working public
-  test files.
-- The list changes. I'll repeat the scan in a week and update the numbers.
+Measured on 5-6 November 2026 by one person on two connections in one city. A provider's test files
+may sit in a different subnet from its VPS. AWS and Azure are in the list for the next run; Oracle,
+Contabo and Linode had no working public test files. I'll repeat the scan and update the numbers.
+
+## Your turn
+
+If you're in Russia, run the script and share the result through the
+[GitHub form](https://github.com/MarkSinD/freeze-check/issues/new?template=freeze-check-result.yml):
+operator, region, date and output, no IP. Tele2, MegaFon, Rostelecom and other regions are
+especially interesting. If you host something for Russian users, check whose network your server
+is in. A Russian version of this write-up is on Habr.
