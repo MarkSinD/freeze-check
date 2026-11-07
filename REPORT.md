@@ -188,7 +188,6 @@ own server, `owner` shows who owns its network and what we measured there, and `
 server plus `url` from Russia measures it directly. If you don't have anyone in Russia to run it,
 the `owner` command alone tells you whether your provider's network was frozen in our test.
 
-![freeze-check output](docs/images/tool-output.png)
 
 **If you are in Russia,** please share your result through the
 [GitHub form](https://github.com/MarkSinD/freeze-check/issues/new?template=freeze-check-result.yml):
